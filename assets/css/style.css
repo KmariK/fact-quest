@@ -34,15 +34,12 @@
     }
 
     #startQuizBtn {
-    background-color: #0dbffe;
+    background-color:#ff1900;
     }
 
     #quiz-video {
-        margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #000;
-
+      padding-top: 25px;
+      padding-bottom: 25px;
+      background-color: var(--secondary-color);
     }
     
