@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-font: "Press Start 2P", sans-serif;
+    --secondary-font:"Roboto", sans-serif;
+    --primary-color:#d5dced;
+    --secondary-color:#0dbffe; 
+    }
+
+    /* Global styles */
+
+    body {
+        font-family: var(--secondary-font);
+    }
+
+    #logo {
+        font-family: var(--primary-font);
+        font-size: 2rem;
+        color: #ff1900 ; /*Scarlet(red)*/
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    p {
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    #startQuizBtn {
+    background-color: #0dbffe;
+    }
+
+    #quiz-video {
+        margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+
+    }
+    
