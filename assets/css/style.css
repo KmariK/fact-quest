@@ -43,3 +43,21 @@
       background-color: var(--secondary-color);
     }
     
+    /*About us page*/
+   #quiz-activites {
+    padding-top: 20px;
+    background-color: var(--primary-color);
+   }
+
+   /*Footer*/
+#social-medias {
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    }
+
+    #social-medias i {
+        color: #000
+    }
