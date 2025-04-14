@@ -33,21 +33,38 @@
         text-align: center;
     }
 
-    #startQuizBtn {
-    background-color:#ff1900;
-    }
-
     #quiz-video {
       padding-top: 25px;
       padding-bottom: 25px;
       background-color: var(--secondary-color);
     }
     
+    #start-quiz-button {
+        margin-top: 30px;
+    }
+
     /*About us page*/
+    .about-us-section {
+        padding-bottom: 15px;
+    }
+
    #quiz-activites {
-    padding-top: 20px;
+    padding-top: 10px;
     background-color: var(--primary-color);
+    padding-bottom: 30px;
    }
+
+   /*Contact us page */
+    #contact-us-form {
+            width: 400%;
+            max-width: 800px;
+            margin: 0 auto; /* horizontal centering */
+          }
+
+    #form-submit-button {
+        margin-top: 30px;
+    }
+    
 
    /*Footer*/
 #social-medias {
