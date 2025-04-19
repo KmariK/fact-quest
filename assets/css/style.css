@@ -33,13 +33,22 @@
         margin-left: 20px;
         text-align: center;
     }
-
-    #quiz-video {
-      padding-top: 25px;
-      padding-bottom: 25px;
-      background-color: var(--secondary-color);
-    }
     
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    .page-container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-wrap {
+        flex: 1;
+    }
+  
     #start-quiz-button {
         margin-top: 30px;
     }
