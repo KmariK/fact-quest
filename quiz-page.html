@@ -44,24 +44,20 @@
       </nav>
     </header>
 
-  <div class="question-area">
-    <span id="question1"></span>
-    <span id="question2"></span>
-    <span id="question3"></span>
-    <span id="question4"></span>
-    <span id="question5"></span>
-    <span id="question6"></span>
-    <span id="question7"></span>
-    <span id="question8"></span>
-    <span id="question9"></span>
-    <span id="question10"></span>
-    <span>=</span>
-    <p class="answer-message">Type Answer:</p>
-    <input id="answer-box" type="number">
+  <form id="quizForm">
+    <div id="options"></div>
+    <br>
+    <!--Bootstrap Button-->
+    <div>
+      <button type="button" id="quiz-game-submit" class="btn btn-dark d-grid gap-2 col-2 mx-auto"" onclick="checkAnswer()">Submit</button>
+      </div>
+      <!--Bootstrap Button-->
+      <div class="d-flex justify-content-end">
+        <button type="button" id="quiz-game-next" class="btn btn-outline-info" onclick="nextQuestion()">Next</button>
+      </div>
+  </form>
 </div>
-<button data-type="submit" class="btn btn--gray">Submit Answer</button>
-</div>
-  </div>
+    
 
 
 <footer class="mt-auto">
@@ -93,7 +89,7 @@
 </footer>
 
 
-   
-</div>
-  <script src="assets/js/script.js"></script>
+
+</div>    
+<script src="assets/js/script.js"></script>
 </body>

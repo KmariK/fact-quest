@@ -77,6 +77,23 @@
     padding-bottom: 30px;
    }
 
+   .card-title {
+    text-align: center;
+   }
+
+   /*Quiz game page*/
+   #quiz-game-submit {
+    margin-top: 10px;
+    text-align: center;
+   }
+
+   #quiz-game-next {
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 35px;
+   }
+
+
    /*Contact us page */
     #form {
         background-color: var(--primary-color);
