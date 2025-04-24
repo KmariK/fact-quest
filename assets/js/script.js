@@ -10,13 +10,13 @@ if (startBtn) {
 const questions = [ 
   {
     question: "What is the capital of France?", 
-    image: "assets/images/france.flag.jpg",
+    image: "assets/images/france-flag.jpg", 
     options: ["London", "Paris", "Rome", "Berlin"],
     answer: 1
   }, 
   {
     question: "What is the largest planet?", 
-    image: "assets/images/planets.jpg",
+    //image: "assets/images/planets.jpg",
     options: ["Earth", "Jupiter", "Mercury", "Venus"],
     answer: 1
   },
