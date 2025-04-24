@@ -37,7 +37,6 @@
     html, body {
         height: 100%;
         margin: 0;
-        background-color: #000;
     }
 
     .page-container {
@@ -64,7 +63,7 @@
    }
 
     #start-quiz-button {
-        margin-top: 30px;
+        padding-top: 50px;
     }
 
     /*About us page*/
@@ -83,16 +82,35 @@
    }
 
    /*Quiz game page*/
-   #quiz-game-submit {
-    margin-top: 10px;
+   .question {
+    font-size: 250%;
+    font-weight: bold;
+    color: #ff1900 ;
+    padding-top: 30px;
     text-align: center;
    }
 
-   #quiz-game-next {
-    margin-top: 10px;
-    text-align: center;
-    margin-right: 35px;
+   .options {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+
    }
+
+   .answer {
+    text-align: center;
+    font-weight: 200%;
+    color: #000;
+   }
+
+
+   #quiz-game-next {
+    margin-bottom: 50px;
+   }
+
+   
 
 
    /*Contact us page */

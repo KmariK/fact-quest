@@ -1,8 +1,4 @@
 
-//for click here button on index.html page 
-//document.getElementById("startQuizBtn").addEventListener("click", function() {
-//window.location.href = "quiz-page.html";
-//});
 
 const startBtn = document.getElementById("startQuizBtn");
 if (startBtn) {
@@ -14,11 +10,13 @@ if (startBtn) {
 const questions = [ 
   {
     question: "What is the capital of France?", 
+    image: "assets/images/france.flag.jpg",
     options: ["London", "Paris", "Rome", "Berlin"],
     answer: 1
   }, 
   {
     question: "What is the largest planet?", 
+    image: "assets/images/planets.jpg",
     options: ["Earth", "Jupiter", "Mercury", "Venus"],
     answer: 1
   },
@@ -93,9 +91,9 @@ function checkAnswer(selectedIndex) {
   const answerEl = document.getElementById("answer");
   if (selectedIndex === questions[currentQuestion].answer) {
     score++;
-    answerEl.textContent = "Correct!";
+    answerEl.textContent = "";
   } else {
-    answerEl.textContent = "Wrong!";
+    answerEl.textContent = "";
   }
 
   // Enable the "Next" button after answering
@@ -113,14 +111,29 @@ function nextQuestion() {
     document.getElementById("question").textContent = "Quiz complete!";
     document.getElementById("options").innerHTML = "";
     document.getElementById("answer").textContent = `Your score: ${score} / ${questions.length}`;
-    document.getElementById("quiz-game-next").disabled = true; // Disable "Next" button
-  }
+    
+    // Hide the Next button
+    document.getElementById("quiz-game-next").style.display = "none";
+  
+    // Show the Restart button
+    document.getElementById("restart-btn").style.display = "inline-block";
+  }  
 }
 
-// Initial load of the first question
+document.getElementById("restart-btn").addEventListener("click", function () {
+  // Reload the page to reset everything
+  location.reload();
+});
+
+
+
+  
+
 window.onload = () => {
   loadQuestion();
+  document.getElementById("restart-btn").style.display = "none"; // Hide restart button initially
 };
+
 
 
 //function showResult()
