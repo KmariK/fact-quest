@@ -66,9 +66,9 @@
     padding-bottom: 0;
    }
 
-    #start-quiz-button {
-        padding-top: 50px;
-    }
+  #startQuizBtn {
+    font-weight: bolder;
+  }
 
     /*About us page*/
     .about-us-section {
