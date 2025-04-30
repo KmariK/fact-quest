@@ -45,7 +45,12 @@ const questions = [
   {
     question: "What does NASA stand for?",
     image: "assets/images/nasa.jpg",
-    options: ["National Aeronautics and Space Administration", "North American Space Agency", "National Association of Space Astronauts", "New Aeronautics and Space Association"],
+    options: [
+      "National Aeronautics and Space Administration",
+      "North American Space Agency",
+      "National Association of Space Astronauts",
+      "New Aeronautics and Space Association"
+    ],
     answer: 0
   },
   {
@@ -65,12 +70,12 @@ const questions = [
     image: "assets/images/shapes.jpg",
     options: ["10", "6", "7", "9"],
     answer: 1
-  },
+  }
 ];
 
 let currentQuestion = 0;
 let score = 0;
-let timeLeft = 10; // Set to 10 seconds instead of 300 (5 minutes)
+let timeLeft = 10; // seconds
 let timerInterval;
 
 function loadQuestion() {
@@ -84,10 +89,11 @@ function loadQuestion() {
 
   const current = questions[currentQuestion];
   questionEl.textContent = current.question;
+  imageTargetEl.setAttribute("src", current.image);
+  imageTargetEl.style.display = "block";
 
   current.options.forEach((option, index) => {
     const btn = document.createElement("button");
-    imageTargetEl.setAttribute("src",questions[currentQuestion].image)
     btn.textContent = option;
     btn.className = "btn btn-outline-primary m-1";
     btn.onclick = () => checkAnswer(index);
@@ -101,26 +107,23 @@ function checkAnswer(selectedIndex) {
   const answerEl = document.getElementById("answer");
   if (selectedIndex === questions[currentQuestion].answer) {
     score++;
-    answerEl.textContent = "";
-  } else {
-    answerEl.textContent = "";
   }
-
+  answerEl.textContent = "";
   document.getElementById("quiz-game-next").disabled = false;
 }
 
 function nextQuestion() {
   currentQuestion++;
-
   if (currentQuestion < questions.length) {
     loadQuestion();
   } else {
-    clearInterval(timerInterval); // Stop the timer if quiz ends early
+    clearInterval(timerInterval);
     document.getElementById("question").textContent = "Quiz Complete!";
     document.getElementById("options").innerHTML = "";
     document.getElementById("answer").textContent = `Your score: ${score} / ${questions.length}`;
     document.getElementById("quiz-game-next").style.display = "none";
     document.getElementById("restart-btn").style.display = "inline-block";
+    document.getElementById("game-image").style.display = "none";
   }
 }
 
@@ -143,7 +146,6 @@ function startTimer() {
     if (timeLeft <= 0) {
       clearInterval(timerInterval);
       timerDisplay.style.display = "none";
-      gameOverDisplay.style.display = "block";
       endQuizEarly();
     }
 
@@ -157,23 +159,33 @@ function startTimer() {
 function endQuizEarly() {
   const questionEl = document.getElementById("question");
   const optionsEl = document.getElementById("options");
+  const answerEl = document.getElementById("answer");
+  const gameImageEl = document.getElementById("game-image");
+  const nextBtn = document.getElementById("quiz-game-next");
+  const restartBtn = document.getElementById("restart-btn");
+  const gameOverDisplay = document.getElementById("gameOver");
 
+  // Hide all quiz UI elements
   questionEl.style.display = "none";
   optionsEl.style.display = "none";
-  questionEl.textContent = "Game Over!";
-  questionEl.classList.add("games-over");
-  document.getElementById("answer").textContent = `Your score: ${score} / ${questions.length}`;
-  document.getElementById("quiz-game-next").style.display = "none";
-  document.getElementById("restart-btn").style.display = "inline-block";
+  answerEl.style.display = "none";
+  gameImageEl.style.display = "none";
+  nextBtn.style.display = "none";
+
+  // Show "Game Over" message
+  gameOverDisplay.innerHTML = `
+    <h1 style="font-size: 3rem; color: red; text-align: center;">GAME OVER!</h1>`;
+  gameOverDisplay.style.display = "block";
+
+  // Show restart button
+  restartBtn.style.display = "inline-block";
 }
 
 window.onload = () => {
   loadQuestion();
   document.getElementById("restart-btn").style.display = "none";
-  startTimer(); // Start countdown
+  startTimer();
 };
-
-
 
 
 
