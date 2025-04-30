@@ -100,7 +100,7 @@ function nextQuestion() {
     loadQuestion();
   } else {
     clearInterval(timerInterval); // Stop the timer if quiz ends early
-    document.getElementById("question").textContent = "Quiz complete!";
+    document.getElementById("question").textContent = "Quiz Complete!";
     document.getElementById("options").innerHTML = "";
     document.getElementById("answer").textContent = `Your score: ${score} / ${questions.length}`;
     document.getElementById("quiz-game-next").style.display = "none";
