@@ -8,7 +8,7 @@ if (startBtn) {
 const questions = [
   {
     question: "What is the capital of France?",
-    image: "assets/images/france-flag.jpg",
+    //image: "assets/images/france-flag.jpg",
     options: ["London", "Paris", "Rome", "Berlin"],
     answer: 1
   },
@@ -56,7 +56,7 @@ const questions = [
 
 let currentQuestion = 0;
 let score = 0;
-let timeLeft = 300; // 5 minutes
+let timeLeft = 10; // Set to 10 seconds instead of 300 (5 minutes)
 let timerInterval;
 
 function loadQuestion() {
@@ -140,21 +140,24 @@ function startTimer() {
 
 function endQuizEarly() {
   const questionEl = document.getElementById("question");
-  questionEl.textContent = "Time's up!";
-  questionEl.classList.add("times-up"); 
+  const optionsEl = document.getElementById("options");
 
-  document.getElementById("options").innerHTML = "";
+  questionEl.style.display = "none";
+  optionsEl.style.display = "none";
+  questionEl.textContent = "Game Over!";
+  questionEl.classList.add("games-over");
   document.getElementById("answer").textContent = `Your score: ${score} / ${questions.length}`;
   document.getElementById("quiz-game-next").style.display = "none";
   document.getElementById("restart-btn").style.display = "inline-block";
 }
-
 
 window.onload = () => {
   loadQuestion();
   document.getElementById("restart-btn").style.display = "none";
   startTimer(); // Start countdown
 };
+
+
 
 
 
