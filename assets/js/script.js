@@ -174,10 +174,11 @@ function endQuizEarly() {
 
   // Show game over content
   gameOverDisplay.innerHTML = `
-    <h1 style="font-size: 3rem; color: red; text-align: center;">GAME OVER!</h1>
-    <img src="assets/images/game-over.jpg" alt="Game Over" style="display: block; margin: 20px auto; max-width: 100%; height: 100%;">
-    <p style="text-align: center; font-size: 1.5rem;">Your score: ${score} / ${questions.length}</p>
-  `;
+  <h1 style="font-size: 3rem; color: red; text-align: center;">GAME OVER!</h1>
+  <img src="assets/images/game-over.jpg" alt="Game Over" style="display: block; margin: 20px auto; width: 50%; height: 50%;">
+  <p style="text-align: center; font-size: 1.5rem; color: black;">Your score: ${score} / ${questions.length}</p>
+`;
+
   gameOverDisplay.style.display = "block";
 
   // Show restart button
