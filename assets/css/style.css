@@ -86,6 +86,25 @@
    }
 
    /*Quiz game page*/
+   #quiz {
+    background-color: var(--primary-color);
+   }
+
+   #timer {
+    color: orange;
+    font-size: 48px;
+    margin: 20px;
+    text-align: center;
+   }
+   
+   .times-up {
+    font-family: var(--primary-font);
+    color: red;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+   }
+
    .question {
     font-size: 250%;
     font-weight: bold;
@@ -118,8 +137,6 @@
    #quiz-game-next {
     margin-bottom: 50px;
    }
-
-   
 
 
    /*Contact us page */

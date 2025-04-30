@@ -139,18 +139,24 @@ function startTimer() {
 }
 
 function endQuizEarly() {
-  document.getElementById("question").textContent = "Time's up!";
+  const questionEl = document.getElementById("question");
+  questionEl.textContent = "Time's up!";
+  questionEl.classList.add("times-up"); 
+
   document.getElementById("options").innerHTML = "";
   document.getElementById("answer").textContent = `Your score: ${score} / ${questions.length}`;
   document.getElementById("quiz-game-next").style.display = "none";
   document.getElementById("restart-btn").style.display = "inline-block";
 }
 
+
 window.onload = () => {
   loadQuestion();
   document.getElementById("restart-btn").style.display = "none";
   startTimer(); // Start countdown
 };
+
+
 
 
 
