@@ -8,47 +8,61 @@ if (startBtn) {
 const questions = [
   {
     question: "What is the capital of France?",
-    //image: "assets/images/france-flag.jpg",
+    image: "assets/images/france-flag.jpg",
     options: ["London", "Paris", "Rome", "Berlin"],
     answer: 1
   },
   {
     question: "What is the largest planet?",
+    image: "assets/images/planets.jpg",
     options: ["Earth", "Jupiter", "Mercury", "Venus"],
     answer: 1
   },
   {
     question: "Who wrote Romeo and Juliet?",
+    image: "assets/images/stage-play.jpg",
     options: ["William Shakespeare", "F.Scott Fitzgearld", "J.K Rowling", "Maya Angelou"],
     answer: 0
   },
   {
     question: "What is the chemical symbol for water?",
+    image: "assets/images/chemicals.jpg",
     options: ["AU", "Li", "H2O", "Mg"],
     answer: 2
   },
   {
     question: "Which country is famous for inventing pizza?",
+    image: "assets/images/chemicals.jpg",
     options: ["France", "England", "Mexico", "Italy"],
     answer: 3
   },
   {
     question: "What is the square root of 64?",
+    image: "assets/images/maths.jpg",
     options: ["8", "16", "-23", "5"],
     answer: 0
   },
   {
+    question: "What does NASA stand for?",
+    image: "assets/images/nasa.jpg",
+    options: ["National Aeronautics and Space Administration", "North American Space Agency", "National Association of Space Astronauts", "New Aeronautics and Space Association"],
+    answer: 0
+  },
+  {
     question: "Which animal is known as the 'King of the Jungle'?",
+    image: "assets/images/jungle.jpg",
     options: ["Cheater", "Snake", "Lion", "Elephant"],
     answer: 2
   },
   {
     question: "What is the longest river in the world",
+    image: "assets/images/river.jpg",
     options: ["River Nile", "River Thames", "Amazon River", "Yangtze River"],
     answer: 0
   },
   {
     question: "How many sides does a hexagon have?",
+    image: "assets/images/shapes.jpg",
     options: ["10", "6", "7", "9"],
     answer: 1
   },
@@ -62,6 +76,7 @@ let timerInterval;
 function loadQuestion() {
   const questionEl = document.getElementById("question");
   const optionsEl = document.getElementById("options");
+  const imageTargetEl = document.getElementById("game-image");
   const answerEl = document.getElementById("answer");
 
   optionsEl.innerHTML = "";
@@ -72,6 +87,7 @@ function loadQuestion() {
 
   current.options.forEach((option, index) => {
     const btn = document.createElement("button");
+    imageTargetEl.setAttribute("src",questions[currentQuestion].image)
     btn.textContent = option;
     btn.className = "btn btn-outline-primary m-1";
     btn.onclick = () => checkAnswer(index);
