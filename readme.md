@@ -40,72 +40,71 @@
 ### Project Goals
 
 #### User Goals
-- Finding out what the company has to offer.
-- See projects the company have done.
-- Find information about the company. 
--  Find the location of the buisness.
+- Learn fun facts and test knowledge. 
+- Enjoy playing an easy, quick quiz. 
+- See score right after finishing. 
+- Use the site/play the quiz on any phone, tablet or computer
 
 #### Site Owner Goals
-- Increase client enquiries.
-- Promote the business. 
-- Showcase the companys expertise. 
-- Provide luxury experience.
-- Provide a way for new clients and exsisting clients to contact the business.
-- Provide information about the buisness to clients.
-
+- Attract new users and keep them coming back. 
+- Share the site with schools, teams and groups. 
+- Collect feedback to improve the quiz. 
+- Offer a helpful, friendly experience. 
 ### User Experience
 
 #### Target Audience
-- People looking for a interior deisgn company to elevate there space i.e home, office.
-- Investors aiming to add value to properties through luxury interior design.
+- People looking for a quick fun fact quiz game, that can be played in schools, work and for fun.
+- For students it's for learning. 
+- For workers/teams it's for team bonding or training. 
+- For anyone for fun its to relax or challenge friends.  
 
 #### User Requirments and Expectations
-- A simple navigation system 
-- High quality protraying the buisness
-- Visually appealing design regardless of the screensize
+- A simple navigation system which works well on phones, tablets and computers
+- Gives score when the game is done or timer is up
+- Shows current question and time left
+- Option to replay quiz when the game is done or time is up
+- A timer for users who want a challenge 
+- Clear buttons and readable text
 - Easy contact options
 - Accessibility
 
 #### User Stories:
 
 #### First-time User 
-1. As a first time user, I want to know where the business is located i.e country & city. 
-2. As a first time user, I want to know what services the business has to offer.
-3. As a first time user, I want to get a feel of how the business will elevate my space. 
-4. As a first time user, I want to know how best to contact the company.
-5. As a first time user, I want a clear explanation that the page I'm looking for cannot be found.
+1. As a first time user, I want to know what the quiz is about. 
+2. As a first time user, I want to play the game easily.
+3. I want a simple way to start playing without signing up. 
+4. I want to visit the 'About Us' page to learn more. 
+5. I want to contact support if something goes wrong.  
 
 #### Returning User
-6. As a returning user, I want to see the companys latest project.
-7. As a returning user, I want to know if there is a new service.
-8. As a returning user, I want to know if there is any new offers.
-9. As a returning user, I want to know if the contact details are the same or have changed.
-10. As a returning user, I want to know who founded the company. 
-11. As a returning user, I want to get directions to the companys showroom studio.
-12. As a returning user, I want the 404 page to include a quick way to navigate to the pages on the website. 
+6. I want to play the quiz again even if it's the same questions. 
+7. I want to improve my score and see if I remember the answers. 
+8. I want to challenege my work colleague/teams and friends to beat my score  
 
 #### Site Owner
-13. As the site owner, I want users to find news about offers, latest trends and expert tips.
-14. As the site owner, I want users to get to know the business and how it evolved.
-15. As the site owner, I want users to be able to contact us via a form, email, telephone or our showcase studio location.
+9. I want the quiz questions to stay the same so users can retry them.
+10. I want to make sure users have a smooth, fun experience each time they visit.
+11. I want to see how people use the site and improve it based on feedback.
+
 
 
 ### Design
 #### Design Choices:
-The webpage was designed for a luxury, mordern and minimalist approach to the customer. It is clear and sleek and gives the customer a insight of a highly professional and seamless experience they will get if they work with the business.
+The webpage was designed with a simple, minimalist approach to enhance user experience. It is clear and intuitive, allowing users to easily understand the quiz's purpose and participate without any hassle. 
 
 #### Colours:
-For the colour scheme neutral tones were chosen to match the images on the page. I chose the colours by inserting the images used in my project to the [Image Color Picker](https://imagecolorpicker.com/) website and searched for there HEX Code. The two colours I chose are #e9eceb for the body and #494931; for the footer.
+For the colour scheme bright colours were chosen to engage the user. I selected the colors by browsing through various options and choosing the ones that best suited the aesthetic and purpose of my site. [Image Color Picker](https://imagecolorpicker.com/) website and searched for there HEX Code. The two colours I chose are #d5dced; used for backround colour and #0dbffe; used as a font colour. 
 
 #### Fonts:
-The two main fonts are Gilda display which is the primary font with a fallback of sans-serif and Italiana which is the secondary font with a fall back of sans-serif.
+The two main fonts are Press Start 2P which is the primary font with a fallback of sans-serif and Roboto which is the secondary font with a fall back of sans-serif.
 
 #### Structure:
-The page is structured in a easy, user friendly way. When the customers arrive on the website they are immediately welcomed with a logo of the left side and a familiar type of navigation bar to the right. The website consists of four pages:
-1. A homepage with a carousel displaying the companys work and a section to subscribe to the newsletter
-2. A about us page with a descriptive insight of what the company is about and what it has to offer with a image of the founder and co founder
-3. A project page presenting the projects carried out by the company demonstrating to the customer their expertise and commitment to excellence
-4. A contact page with a image of the company's interior design work, a contact form, a address and contact number, a google map so customers can find the showcase studio and a opening times table below for the showcase studio.
+The page is structured in a easy, user friendly way. When the user arrive on the website they are immediately welcomed with a logo on the center of the page below a familiar type of navigation bar to the right. The website consists of four pages:
+1. A homepage with a navbar at the top and logo and a button to start the game. 
+2. A about us page with a descriptive insight of what the quiz is about, who and where the game can be played. 
+3. A quiz game page with a timer at the top that starts as soon as the page loads. The quiz has 10 questions, each with a matching image. Below each question are multiple choice answers. A "Next" button lets the user move to the next question.
+4. A contact page a contact form, a address and contact number, (ADD TO PAGE)
 
 #### Wireframes
 

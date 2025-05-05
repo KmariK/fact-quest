@@ -1,6 +1,6 @@
 const startBtn = document.getElementById("startQuizBtn");
 if (startBtn) {
-  startBtn.addEventListener("click", function () {
+  startBtn.addEventListener("click", () => {
     window.location.href = "quiz-page.html";
   });
 }
@@ -60,7 +60,7 @@ const questions = [
     answer: 2
   },
   {
-    question: "What is the longest river in the world",
+    question: "What is the longest river in the world?",
     image: "assets/images/river.jpg",
     options: ["River Nile", "River Thames", "Amazon River", "Yangtze River"],
     answer: 0
@@ -75,40 +75,42 @@ const questions = [
 
 let currentQuestion = 0;
 let score = 0;
-let timeLeft = 10; // seconds
+let timeLeft = 10;
 let timerInterval;
 
 function loadQuestion() {
-  const questionEl = document.getElementById("question");
-  const optionsEl = document.getElementById("options");
-  const imageTargetEl = document.getElementById("game-image");
+  const qEl      = document.getElementById("question");
+  const optsEl   = document.getElementById("options");
+  const imgEl    = document.getElementById("game-image");
+  const wrapEl   = document.getElementById("image-wrapper");
   const answerEl = document.getElementById("answer");
 
-  optionsEl.innerHTML = "";
+  qEl.textContent      = questions[currentQuestion].question;
+  optsEl.innerHTML     = "";
   answerEl.textContent = "";
 
-  const current = questions[currentQuestion];
-  questionEl.textContent = current.question;
-  imageTargetEl.setAttribute("src", current.image);
-  imageTargetEl.style.display = "block";
+  imgEl.src = questions[currentQuestion].image;
+  imgEl.removeAttribute("style");
+  imgEl.className = "img-fluid";
 
-  current.options.forEach((option, index) => {
+  wrapEl.className = "d-flex justify-content-center mb-4";
+
+  questions[currentQuestion].options.forEach((opt, idx) => {
     const btn = document.createElement("button");
-    btn.textContent = option;
-    btn.className = "btn btn-outline-primary m-1";
-    btn.onclick = () => checkAnswer(index);
-    optionsEl.appendChild(btn);
+    btn.textContent = opt;
+    btn.type        = "button";
+    btn.className   = "btn btn-outline-primary m-2";
+    btn.onclick     = () => checkAnswer(idx);
+    optsEl.appendChild(btn);
   });
 
   document.getElementById("quiz-game-next").disabled = true;
 }
 
-function checkAnswer(selectedIndex) {
-  const answerEl = document.getElementById("answer");
-  if (selectedIndex === questions[currentQuestion].answer) {
+function checkAnswer(selected) {
+  if (selected === questions[currentQuestion].answer) {
     score++;
   }
-  answerEl.textContent = "";
   document.getElementById("quiz-game-next").disabled = false;
 }
 
@@ -118,72 +120,55 @@ function nextQuestion() {
     loadQuestion();
   } else {
     clearInterval(timerInterval);
-    document.getElementById("question").textContent = "Quiz Complete!";
-    document.getElementById("options").innerHTML = "";
-    document.getElementById("answer").textContent = `Your score: ${score} / ${questions.length}`;
-    document.getElementById("quiz-game-next").style.display = "none";
-    document.getElementById("restart-btn").style.display = "inline-block";
-    document.getElementById("game-image").style.display = "none";
+    finishQuiz();
   }
 }
 
-document.getElementById("restart-btn").addEventListener("click", function () {
-  location.reload();
-});
+function finishQuiz() {
+  document.getElementById("question").textContent = "Quiz Complete!";
+  document.getElementById("options").innerHTML   = "";
+  document.getElementById("answer").textContent  = `Your score: ${score} / ${questions.length}`;
+  document.getElementById("quiz-game-next").style.display = "none";
+  document.getElementById("restart-btn").style.display    = "inline-block";
+  document.getElementById("game-image").style.display     = "none";
+}
 
 function startTimer() {
   const timerDisplay = document.getElementById("timer");
-  const gameOverDisplay = document.getElementById("gameOver");
-
-  function updateTimer() {
-    let minutes = Math.floor(timeLeft / 60);
-    let seconds = timeLeft % 60;
-
+  timerInterval = setInterval(() => {
+    const mins = Math.floor(timeLeft / 60);
+    const secs = timeLeft % 60;
     timerDisplay.textContent =
-      (minutes < 10 ? "0" : "") + minutes + ":" +
-      (seconds < 10 ? "0" : "") + seconds;
+      (mins < 10 ? "0" : "") + mins + ":" +
+      (secs < 10 ? "0" : "") + secs;
 
-    if (timeLeft <= 0) {
+    if (timeLeft-- <= 0) {
       clearInterval(timerInterval);
       timerDisplay.style.display = "none";
       endQuizEarly();
     }
-
-    timeLeft--;
-  }
-
-  timerInterval = setInterval(updateTimer, 1000);
-  updateTimer();
+  }, 1000);
 }
 
 function endQuizEarly() {
-  const questionEl = document.getElementById("question");
-  const optionsEl = document.getElementById("options");
-  const answerEl = document.getElementById("answer");
-  const gameImageEl = document.getElementById("game-image");
-  const nextBtn = document.getElementById("quiz-game-next");
-  const restartBtn = document.getElementById("restart-btn");
-  const gameOverDisplay = document.getElementById("gameOver");
+  ["question","options","answer","game-image","quiz-game-next"]
+    .forEach(id => document.getElementById(id).style.display = "none");
 
-  // Hide quiz content
-  questionEl.style.display = "none";
-  optionsEl.style.display = "none";
-  answerEl.style.display = "none";
-  gameImageEl.style.display = "none";
-  nextBtn.style.display = "none";
-
-  // Show game over content
-  gameOverDisplay.innerHTML = `
-  <h1 style="font-size: 3rem; color: red; text-align: center;">GAME OVER!</h1>
-  <img src="assets/images/game-over.jpg" alt="Game Over" style="display: block; margin: 20px auto; width: 50%; height: 50%;">
-  <p style="text-align: center; font-size: 1.5rem; color: black;">Your score: ${score} / ${questions.length}</p>
-`;
-
-  gameOverDisplay.style.display = "block";
-
-  // Show restart button
-  restartBtn.style.display = "inline-block";
+  const over = document.getElementById("gameOver");
+  over.innerHTML = `
+    <h1 class="text-danger text-center display-4">GAME OVER!</h1>
+    <img src="assets/images/game-over.jpg"
+         class="img-fluid d-block mx-auto my-4"
+         style="width:50%;"
+         alt="Game Over">
+    <p class="text-center fs-4">Your score: ${score} / ${questions.length}</p>
+  `;
+  over.style.display = "block";
+  document.getElementById("restart-btn").style.display = "inline-block";
 }
+
+document.getElementById("quiz-game-next").addEventListener("click", nextQuestion);
+document.getElementById("restart-btn").addEventListener("click", () => location.reload());
 
 window.onload = () => {
   loadQuestion();
