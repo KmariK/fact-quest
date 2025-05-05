@@ -48,7 +48,8 @@
     .content-wrap {
         flex: 1;
     }
-  /*Home page*/
+  
+    /*Home page*/
    body.index-page {
     background-color:var(--primary-color);
    }
@@ -156,6 +157,12 @@
         padding-bottom: 30px;
     }
     
+    /*404 page*/
+    #error img {
+        height: 300px;
+        width: 300px;
+    }
+
 
    /*Footer*/
 #social-medias {
