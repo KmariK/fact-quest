@@ -110,11 +110,10 @@
    }
 
    .options {
-    padding-top: 50px;
+    padding-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vh;
    }
 
    .answer {
@@ -125,6 +124,20 @@
 
    #quiz-game-next {
     margin-bottom: 50px;
+   }
+
+   .quiz-complete {
+    font-family: var(--primary-font);
+    color:black;
+    font-size: 300%;
+    font-weight: bold;
+    text-align: center;
+   }
+
+   .quiz-complete-answer {
+    font-family: 250%;
+    font-weight: bold;
+    text-align: center;
    }
 
    #gameOver {

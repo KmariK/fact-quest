@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let currentQuestion = 0;
   let score = 0;
-  let timeLeft = 10;
+  let timeLeft = 300; // Updated from 10 to 300 seconds (5 minutes)
   let timerInterval;
 
   function loadQuestion() {
@@ -135,14 +135,40 @@ document.addEventListener("DOMContentLoaded", () => {
     const optsEl = document.getElementById("options");
     const answerEl = document.getElementById("answer");
     const imgEl = document.getElementById("game-image");
-
-    if (qEl) qEl.textContent = "Quiz Complete!";
-    if (optsEl) optsEl.innerHTML = "";
-    if (answerEl) answerEl.textContent = `Your score: ${score} / ${questions.length}`;
-    if (nextBtn) nextBtn.style.display = "none";
-    if (restartBtn) restartBtn.style.display = "inline-block";
-    if (imgEl) imgEl.style.display = "none";
+    const timerEl = document.getElementById("timer"); // Assuming you have a timer element
+  
+    // Stop the timer if it's running
+    if (timerEl) {
+      timerEl.style.display = "none"; // Hide the timer element
+      // If you have a running timer interval, clear it
+      clearInterval(timerInterval);  // Assuming `timerInterval` is the variable holding the interval ID
+    }
+  
+    // Display the final message
+    if (qEl) {
+      qEl.textContent = "Quiz Complete!";
+      qEl.classList.add("quiz-complete"); // Add the CSS class for styling
+    }
+  
+    if (optsEl) optsEl.innerHTML = "";  // Clear the options
+    if (answerEl) { 
+      answerEl.textContent = `Your score: ${score} / ${questions.length}`;
+      answerEl.classList.add("quiz-complete-answer"); // Add the class for styling
+  
+      // Apply color based on score
+      if (score >= 7) {
+        answerEl.style.color = "green"; // Green if score is 7 or above
+      } else {
+        answerEl.style.color = "red"; // Red if score is below 7
+      }
+    }
+  
+    if (nextBtn) nextBtn.style.display = "none";  // Hide the next button
+    if (restartBtn) restartBtn.style.display = "inline-block";  // Show the restart button
+    if (imgEl) imgEl.style.display = "none";  // Hide the image
   }
+  
+  
 
   function startTimer() {
     const timerDisplay = document.getElementById("timer");
@@ -195,6 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
     startTimer();
   }
 });
+
 
 
 
