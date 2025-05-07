@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       question: "Which country is famous for inventing pizza?",
-      image: "assets/images/chemicals.jpg",
+      image: "assets/images/pizza.jpg",
       options: ["France", "England", "Mexico", "Italy"],
       answer: 3
     },
@@ -135,37 +135,43 @@ document.addEventListener("DOMContentLoaded", () => {
     const optsEl = document.getElementById("options");
     const answerEl = document.getElementById("answer");
     const imgEl = document.getElementById("game-image");
-    const timerEl = document.getElementById("timer"); // Assuming you have a timer element
+    const timerEl = document.getElementById("timer");
   
-    // Stop the timer if it's running
+    // Stop and hide timer
     if (timerEl) {
-      timerEl.style.display = "none"; // Hide the timer element
-      // If you have a running timer interval, clear it
-      clearInterval(timerInterval);  // Assuming `timerInterval` is the variable holding the interval ID
+      timerEl.style.display = "none";
+      clearInterval(timerInterval);
     }
   
-    // Display the final message
+    // Final quiz message
     if (qEl) {
       qEl.textContent = "Quiz Complete!";
-      qEl.classList.add("quiz-complete"); // Add the CSS class for styling
+      qEl.classList.add("quiz-complete");
     }
   
-    if (optsEl) optsEl.innerHTML = "";  // Clear the options
-    if (answerEl) { 
-      answerEl.textContent = `Your score: ${score} / ${questions.length}`;
-      answerEl.classList.add("quiz-complete-answer"); // Add the class for styling
+    if (optsEl) optsEl.innerHTML = "";
   
-      // Apply color based on score
+    if (answerEl) {
+      answerEl.classList.add("quiz-complete-answer");
+  
       if (score >= 7) {
-        answerEl.style.color = "green"; // Green if score is 7 or above
+        answerEl.style.color = "green";
+        answerEl.innerHTML = `
+          <img src="assets/images/thumbs-up.jpg" alt="Thumbs Up" style="width: 300px; margin-bottom: 10px;"><br>
+          Your score: ${score} / ${questions.length}
+        `;
       } else {
-        answerEl.style.color = "red"; // Red if score is below 7
+        answerEl.style.color = "red";
+        answerEl.innerHTML = `
+          <img src="assets/images/thumbs-down.jpg" alt="Thumbs Down" style="width: 300px; margin-bottom: 10px;"><br>
+          Your score: ${score} / ${questions.length}
+        `;
       }
     }
   
-    if (nextBtn) nextBtn.style.display = "none";  // Hide the next button
-    if (restartBtn) restartBtn.style.display = "inline-block";  // Show the restart button
-    if (imgEl) imgEl.style.display = "none";  // Hide the image
+    if (nextBtn) nextBtn.style.display = "none";
+    if (restartBtn) restartBtn.style.display = "inline-block";
+    if (imgEl) imgEl.style.display = "none";
   }
   
   
