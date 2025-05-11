@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const btn = document.createElement("button");
       btn.textContent = opt;
       btn.type = "button";
-      btn.className = "btn btn-outline-primary m-2";
+      btn.className = "btn btn-outline-primary m-1 m-sm-3 m-md-4 w-100";
       btn.onclick = () => checkAnswer(idx);
       optsEl.appendChild(btn);
     });
@@ -203,12 +203,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const over = document.getElementById("gameOver");
     if (over) {
       over.innerHTML = `
-        <h1 class="text-danger text-center display-4">GAME OVER!</h1>
+        <h1 class="game-over">GAME OVER!</h1>
         <img src="assets/images/game-over.jpg"
              class="img-fluid d-block mx-auto my-4"
              style="width:50%;"
              alt="Game Over">
-        <p class="text-center fs-4">Your score: ${score} / ${questions.length}</p>
+        <p>Your score: ${score} / ${questions.length}</p>
       `;
       over.style.display = "block";
     }
@@ -227,6 +227,8 @@ document.addEventListener("DOMContentLoaded", () => {
     startTimer();
   }
 });
+
+
 
 
 

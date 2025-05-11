@@ -18,7 +18,7 @@
         font-family: var(--primary-font);
         font-size: 6rem;
         text-align: center;
-        color: var(--secondary-color) ; /*Scarlet(red)*/
+        color: var(--secondary-color) ;
     }
 
     h1,
@@ -182,3 +182,73 @@
     #social-medias i {
         color: #000
     }
+
+
+/*Media Queries*/
+/* Media query: phones (320px and up) */
+@media screen and (min-width: 320px) {
+    /*Home page*/
+    #logo {
+     text-align: center;
+     font-size: 325%;
+    }
+
+    /*About us page*/
+    .about-us-section p {
+        font-size: 75%;
+    }
+    
+    /*Quiz game page*/
+    #question {
+        font-size: 120%;
+    }
+
+    .btn {
+        font-size: 12px; 
+        min-height: 10px;
+      }
+
+
+    .quiz-complete {
+        font-size: 200%;
+    }
+    
+   .game-over {
+    font-size: 75%;
+   }
+
+   #game-over-img {
+    height: 200px;
+    width: 300px;
+   }
+
+   #game-over-score {
+    font-size: 50%;
+   }
+
+   /*Contact us page*/ 
+   #contact h2 {
+    font-size: 100%;
+   }
+
+   #contact h3 {
+    font-size: 85%;
+   }
+
+   }
+
+    
+    
+    /* Media query: large or landscape phones (576px and up) */
+    @media screen and (min-width: 576px) {
+       
+    }
+    
+    /* Media query: tablets and larger (768px and up) */
+    @media screen and (min-width: 768px) {
+    }
+    
+    /* Large devices (laptops and desktops, 992px and up) */
+    @media screen and (min-width: 992px) {    
+        
+        }
