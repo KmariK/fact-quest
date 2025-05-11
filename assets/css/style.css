@@ -149,10 +149,11 @@
     min-height: 300px;
    }
 
-   /*Contact us page */
+   /*Contact us page 
     #form {
         background-color: var(--primary-color);
     }
+    */
         
     #contact-us-form {
             width: 400%;
@@ -193,9 +194,17 @@
      font-size: 325%;
     }
 
+    #home-page {
+        font-size: 90%;
+    }
+
     /*About us page*/
     .about-us-section p {
         font-size: 75%;
+    }
+
+    .card-text {
+        font-size: 80%;
     }
     
     /*Quiz game page*/
@@ -233,6 +242,14 @@
 
    #contact h3 {
     font-size: 85%;
+   }
+ 
+   #form-heading {
+    margin-left: 10px;
+   }
+
+   .form-control {
+    margin-left: 10px;
    }
 
    }
