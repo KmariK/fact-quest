@@ -14,11 +14,17 @@
         font-family: var(--secondary-font);
     }
 
-    #logo {
+    .logo-homepage {
         font-family: var(--primary-font);
         font-size: 6rem;
         text-align: center;
         color: var(--secondary-color) ;
+    }
+
+    #logo {
+        font-size: 2rem;
+        font-family: var(--primary-font);
+        color: var(--secondary-color);
     }
 
     h1,
