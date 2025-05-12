@@ -320,6 +320,32 @@
     
     /* Media query: tablets and larger (768px and up) */
     @media screen and (min-width: 768px) {
+
+        /*About us page*/
+    .about-us-section p {
+        max-width: 500px;      /* Limits line length for better readability */
+        line-height: 1.2;      /* Adds space between lines */
+        margin: 20px auto;     /* Adds spacing around and centers paragraph */
+        font-size: 95%;       /* Adjust to suit your design */    
+        word-wrap: break-word;
+    }
+     
+    .card-title {
+        font-size: 95%;
+    }
+
+    .card-text {
+        font-size: 80%;
+    }
+  
+    /*Contact page*/
+    #contact h2 {
+        font-size: 100%;
+       }
+    
+       #contact h3 {
+        font-size: 85%;
+       }
     }
     
     /* Large devices (laptops and desktops, 992px and up) */
