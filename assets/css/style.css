@@ -262,7 +262,7 @@
 
    /*Contact us page*/ 
    #contact h2 {
-    font-size: 100%;
+    font-size: 85%;
    }
 
    #contact h3 {
@@ -291,7 +291,31 @@
     
     /* Media query: large or landscape phones (576px and up) */
     @media screen and (min-width: 576px) {
-       
+          /*Contact us page*/
+          #contact-us-form {
+            background-color: #fff;
+            color: #333;
+            padding: 20px 30px;
+            border-radius: 5px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+          }
+
+    #form-submit-button {
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .contact-info {
+        padding-top: 20px;
+        display: flex;
+        gap: 20px; /* space between the inputs */
+        flex-wrap: wrap; /* allows stacking on smaller screens */
+        justify-content: center;   /* centers horizontally */
+        align-items: center;       /* centers vertically (optional) */
+        text-align: center; 
+    }
     }
     
     /* Media query: tablets and larger (768px and up) */
@@ -299,6 +323,34 @@
     }
     
     /* Large devices (laptops and desktops, 992px and up) */
-    @media screen and (min-width: 992px) {    
+    @media screen and (min-width: 992px) {   
+        
+        /*Contact us page*/
+        #contact-us-form {
+            background-color: #fff;
+            color: #333;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
+          }
+
+    #form-submit-button {
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .contact-info {
+        padding-top: 20px;
+        display: flex;
+        gap: 20px; /* space between the inputs */
+        flex-wrap: wrap; /* allows stacking on smaller screens */
+        justify-content: center;   /* centers horizontally */
+        align-items: center;       /* centers vertically (optional) */
+        text-align: center; 
+    }
+
+    
         
         }
