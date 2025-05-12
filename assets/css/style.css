@@ -32,6 +32,7 @@
     p {
         margin-left: 20px;
         text-align: center;
+        font-size: 80%;
     }
     
     html, body {
@@ -153,25 +154,44 @@
     text-align: center;
     min-height: 300px;
    }
-
-   /*Contact us page 
+  /*Contact us page*/ 
     #form {
         background-color: var(--primary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
     }
-    */
+    
         
     #contact-us-form {
-            width: 400%;
-            max-width: 800px;
-            margin: 0 auto; /* horizontal centering */
+            background-color: #fff;
+            color: #333;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
           }
 
     #form-submit-button {
         margin-top: 30px;
         padding-bottom: 30px;
     }
+
+    .contact-info {
+        padding-top: 20px;
+        display: flex;
+        gap: 20px; /* space between the inputs */
+        flex-wrap: wrap; /* allows stacking on smaller screens */
+        justify-content: center;   /* centers horizontally */
+        align-items: center;       /* centers vertically (optional) */
+        text-align: center; 
+    }
+
     
-    /*404 page*/
+    
+    /*404 page*
     #error {
         text-align: center;
      }
@@ -246,7 +266,7 @@
    }
 
    #contact h3 {
-    font-size: 85%;
+    font-size: 70%;
    }
  
    #form-heading {
@@ -256,6 +276,14 @@
    .form-control {
     margin-left: 10px;
    }
+   
+   #contact-us-form {
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 85%;
+    max-width: 200px;
+  }
 
    }
 
