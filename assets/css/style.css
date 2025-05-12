@@ -89,9 +89,14 @@
    /*Quiz game page*/
 
    #timer {
-    color: orange;
-    font-size: 48px;
-    margin: 20px;
+    color: #ffffff;
+    background-color: #ff6f61;
+    font-size: 3rem;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgb(0, 0, 0, 0.2);
+    width: fit-content;
     text-align: center;
    }
    
