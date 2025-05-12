@@ -22,7 +22,7 @@
     }
 
     #logo {
-        font-size: 2rem;
+        font-size: 1rem;
         font-family: var(--primary-font);
         color: var(--secondary-color);
     }
@@ -220,9 +220,13 @@
 /* Media query: phones (320px and up) */
 @media screen and (min-width: 320px) {
     /*Home page*/
-    #logo {
+    .logo-homepage {
      text-align: center;
      font-size: 325%;
+    }
+
+    #logo {
+        font-size: 90%;
     }
 
     #home-page {
@@ -297,7 +301,12 @@
     
     /* Media query: large or landscape phones (576px and up) */
     @media screen and (min-width: 576px) {
-          /*Contact us page*/
+          
+        #logo {
+            font-size: 150%;
+        }
+        
+        /*Contact us page*/
           #contact-us-form {
             background-color: #fff;
             color: #333;
@@ -308,10 +317,10 @@
             max-width: 400px;
           }
 
-    #form-submit-button {
+        #form-submit-button {
         margin-top: 30px;
         padding-bottom: 30px;
-    }
+          }
 
     .contact-info {
         padding-top: 20px;
@@ -326,22 +335,26 @@
     
     /* Media query: tablets and larger (768px and up) */
     @media screen and (min-width: 768px) {
+        #logo {
+            font-size: 200%;
+        }
+        
 
         /*About us page*/
-    .about-us-section p {
+        .about-us-section p {
         max-width: 500px;      /* Limits line length for better readability */
         line-height: 1.2;      /* Adds space between lines */
         margin: 20px auto;     /* Adds spacing around and centers paragraph */
         font-size: 95%;       /* Adjust to suit your design */    
         word-wrap: break-word;
-    }
+       }
      
-    .card-title {
+       .card-title {
         font-size: 95%;
-    }
+       }
 
     .card-text {
-        font-size: 80%;
+       font-size: 80%;
     }
   
     /*Contact page*/
@@ -356,7 +369,11 @@
     
     /* Large devices (laptops and desktops, 992px and up) */
     @media screen and (min-width: 992px) {   
+        #logo {
+            font-size: 250%;
+        }
         
+
         /*Contact us page*/
         #contact-us-form {
             background-color: #fff;
