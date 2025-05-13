@@ -108,17 +108,18 @@ The page is structured in a easy, user friendly way. When the user arrive on the
 
 #### Wireframes
 
-<details><summary>Home</summary><img src="docs/wireframe/home-page-wireframe.png"></details>
-<details><summary>About us</summary>
-<img src="docs/wireframe/about-us-page-wireframe.png"></details>
-<details><summary>Projects</summary>
-<img src="docs/wireframe/projects-page-wireframe.png"></details>
-<details><summary>Contact us</summary><img src="docs/wireframe/contct-us-page.png"></details>
+<details><summary>Home</summary><img src="assets/docs/wireframe/homepage-wireframe.png"></details>
+<details><summary>About Us</summary>
+<img src="assets/docs/wireframe/about-us-wireframe.png"></details>
+<details><summary>Quiz Game</summary>
+<img src="assets/docs/wireframe/about-us-wireframe.png"></details>
+<details><summary>Contact Us</summary><img src="assets/docs/wireframe/contact-us-wireframe.png"></details>
 
 ### Technologies Used
 #### Languages 
 - HTML
 - CSS
+- JavaScript
 
 #### Frameworks & Tools
 - Bootstrap v5.03
