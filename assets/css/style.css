@@ -93,6 +93,11 @@
     text-align: center;
    }
 
+   .card-img-top {
+    height: 300px;
+    object-fit: cover;
+  }
+
    /*Quiz game page*/
 
    #timer {
@@ -139,9 +144,8 @@
    }
 
    .quiz-complete {
-    font-family: var(--primary-font);
     color:black;
-    font-size: 300%;
+    font-size: 500%;
     font-weight: bold;
     text-align: center;
    }
