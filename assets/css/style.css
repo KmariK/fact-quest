@@ -135,7 +135,7 @@
 
    .answer {
     text-align: center;
-    font-weight: 200%;
+    font-weight: 200;
     color: #000;
    }
 
@@ -151,7 +151,7 @@
    }
 
    .quiz-complete-answer {
-    font-family: 250%;
+    font-size: 250%;
     font-weight: bold;
     text-align: center;
    }
@@ -205,6 +205,11 @@
        align-items: center;
        justify-content: center;
        text-align: center;
+      }
+
+      #error-page img {
+        width: 600px;
+        height: 600px;
       }
 
    /*Footer*/
@@ -299,10 +304,18 @@
     width: 85%;
     max-width: 200px;
   }
-
+  /*404 Page*/ 
+  #error-page { 
+    font-size: 150%;
+    padding-top: 30px;
+    text-align: center;
    }
 
-    
+#error-page img {
+    width: 200px;
+    height: 200px;
+}
+   }
     
     /* Media query: large or landscape phones (576px and up) */
     @media screen and (min-width: 576px) {
@@ -344,7 +357,6 @@
             font-size: 200%;
         }
         
-
         /*About us page*/
         .about-us-section p {
         max-width: 500px;      /* Limits line length for better readability */
@@ -405,6 +417,4 @@
         text-align: center; 
     }
 
-    
-        
         }
