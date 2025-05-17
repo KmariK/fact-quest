@@ -235,7 +235,7 @@ The page consists of four pages and ten features.
 
 #### JavaScript Validation
 - The JS Hint validator was used to validate the Javascript of the website.
-<details><summary>Javascript</summary><img src="">
+<details><summary>Javascript</summary><img src="assets/docs/validation/js-validation.png">
 </details> 
 
 
