@@ -133,6 +133,7 @@ The page is structured in a easy, user friendly way. When the user arrive on the
 - Pexels
 - Unsplash
 - Favicon.io
+- Jquery?
 
 ### Features
 The page consists of four pages and ten features. 
@@ -214,7 +215,7 @@ The page consists of four pages and ten features.
 <img src="docs/validation/about-us-html-validator-2.png">
 </details>
 
-<details><summary>Project page</summary><img src="docs/validation/project-page-validator-1.png">Fixed:
+<details><summary>Quiz game page</summary><img src="docs/validation/project-page-validator-1.png">Fixed:
 <img src="docs/validation/project-page-validator-2.png">
 </details>
 
@@ -245,7 +246,7 @@ The page consists of four pages and ten features.
 <img src="docs/accessability/about-us-page-accessability.png">
 </details>
 
-<details><summary>Project page</summary>
+<details><summary>Quiz game page</summary>
 <img src="docs/accessability/projects-page-accessability.png">
 </details>
 
@@ -257,13 +258,13 @@ The page consists of four pages and ten features.
 #### Performance 
 - Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. 
 
-<details><summary>Home page</summary><img src="docs/performance/home-page-performance.png"></details>
+<details><summary>Home page</summary><img src="assets/docs/performance/home-page-performance.png"></details>
 
-<details><summary>About us page</summary><img src="docs/performance/about-us-page-performance.png"></details>
+<details><summary>About us page</summary><img src="assets/docs/performance/about-us-page-performance.png"></details>
 
-<details><summary>Project page</summary><img src="docs/performance/projects-page-performance.png"></details>
+<details><summary>Quiz game page</summary><img src="assets/docs/performance/quiz-game-page-performance.png"></details>
 
-<details><summary>Contact us page</summary><img src="docs/performance/contact-page-performance.png"></details>
+<details><summary>Contact us page</summary><img src="assets/docs/performance/contact-us-page-performance.png"></details>
 
 <details><summary>404 page</summary><img src="docs/performance/404-image-performance.png"></details>
 

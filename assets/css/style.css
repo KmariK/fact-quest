@@ -198,12 +198,14 @@
         text-align: center; 
     }
 
-    
-    
-    /*404 page*
-    #error {
-        text-align: center;
-     }
+    /*404 page*/
+    #error-page {
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+      }
 
    /*Footer*/
 #social-medias {
