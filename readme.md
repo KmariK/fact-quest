@@ -243,19 +243,19 @@ The page consists of four pages and ten features.
 - The WAVE WebAIM web accessibility evaluation tool was used to ensure the website fulfillled high accessibility. Across all pages it passed with 0 errors. 
 
 <details><summary>Home page</summary>
-<img src="docs/accessability/home-page-accessability.png">
+<img src="assets/docs/accessibility/home-page-accessibility.png">
 </details>
 
 <details><summary>About us page</summary>
-<img src="docs/accessability/about-us-page-accessability.png">
+<img src="assets/docs/accessibility/about-us-accessibility.png">
 </details>
 
 <details><summary>Quiz game page</summary>
-<img src="docs/accessability/projects-page-accessability.png">
+<img src="assets/docs/accessibility/quiz-game-accessibility.png">
 </details>
 
 <details><summary>Contact us page</summary>
-<img src="docs/accessability/contact-us-page-accessability.png">
+<img src="assets/docs/accessibility/contact-us-page-accessibility.png">
 </details>
 
 
