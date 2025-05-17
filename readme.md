@@ -233,6 +233,10 @@ The page consists of four pages and ten features.
 <details><summary>CSS</summary><img src="docs/validation/CSS-validator-1.png">
 <img src="docs/validation/contact-us-page-validator-2.png"></details>
 
+#### JavaScript Validation
+- The JS Hint validator was used to validate the Javascript of the website.
+<details><summary>Javascript</summary><img src="">
+</details> 
 
 
 #### Accessibility
@@ -266,7 +270,7 @@ The page consists of four pages and ten features.
 
 <details><summary>Contact us page</summary><img src="assets/docs/performance/contact-us-page-performance.png"></details>
 
-<details><summary>404 page</summary><img src="docs/performance/404-image-performance.png"></details>
+<details><summary>404 page</summary><img src=""></details>
 
 
 ### Device testing
