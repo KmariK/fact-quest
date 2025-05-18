@@ -90,6 +90,7 @@
 13. I want the quiz questions to stay the same so users can retry them.
 14. I want to make sure users have a smooth, fun experience each time they visit.
 15. I want to see how people use the site and improve it based on feedback.
+16. I want to display links to my social media profiles on the website. So that users can easily find and follow Fact Quest on platforms like Instagram, Twitter, or Facebook to stay updated, share content, and grow the community
 
 
 
@@ -150,60 +151,71 @@ The page consists of four pages and eleven features.
 - Featured on all four pages 
 - The navbar is responsive and changes to a toggler on smaller screens (320px and up, 576px and up to 992px). It includes link to the Homepage, About us page, Projects page and Contact us page
 - It allows users to easily navigate the page 
-- User stories covered : 
+- User stories covered : 4, 14 
 
 2. Start Game Button 
 <img src="assets/docs/features/game-button-feature.png">
 
 - Featured on the home page and allows the user to start the game quicker than clicking 'Quiz Game' in the navbar. 
+- User stories covered: 2, 3, 10, 14
 
 3. About Us 
 <img src="assets/docs/features/about-us.png">
 <img src="assets/docs/features/about-us-2.png">
 
 - Provides users with a clear understanding of what Fact Quest offers and who the intended audience are.
+- User stories covered: 1, 4, 
 
 4. Quiz Game (timer)
+
 <img src="assets/docs/features/timer.png">
 
 - Provides the user with a countdown. 
+- User stories covered: 6
 
 5. Quiz Game (question and multiple choice answers)
 <img src="assets/docs/features/multiple-choice.png">
 
 - The game has ten different questions with four multiple choice answers. 
+- User stories covered:5, 10, 11, 12, 13
 
 6. Quiz Game (restart button)
 <img src="assets/docs/features/restart-button.png">
 
 - When the timer is up or the quiz game is done the player can restart the quiz by clicking the 'Restart' button. 
+- User stories covered:7, 8, 10, 11, 12, 13
 
 7. Quiz Game (game over page)
 <img src="assets/docs/features/game-over.png">
 
 - This is a separate page that appears only when the quiz is incomplete and the timer runs out, displaying the user's score up to that point.
+- User stories covered:7, 8, 11, 13
 
 8. Quiz Game (score page)
 <img src="assets/docs/features/score.png">
 
 - This is a dedicated results page that appears only after the quiz is completed. It displays the player's score and indicates whether they have passed or not.
+- User stories covered:8, 11
 
 9. Contact Form
 <img src="assets/docs/features/contact-form.png">
 
 - A way for the user to send written enquiries about the game or website. 
+- User stories covered: 9, 15
 
 10. Contact Info
 <img src="assets/docs/features/contact-info.png">
 
 - Provides the user with a phone number and email. 
+- User stories covered: 9, 15
 
 11. Footer 
 <img src="assets/docs/features/footer.png">
 
 - Featured on all four pages
 - Consits of four social media links (Facebook, Twitter, Youtube and Instagram)
- 
+ - User stories covered: 16 
+
 
 
 
@@ -399,7 +411,7 @@ The website was tested on the following browsers:
  2. On the left side select 'Pages'
  3. Under 'Build and deployment (source)' select the drop down box then select 'Deploy from a branch'
  3. Under 'Branch' select 'main' beside 'main' you will see a folder icon select it and then select '/root'
- 4. After the webpage automatically refreshes, you'll see at the top 'Your site is life at https://kmarik.github.io/luxury-loom-interiors/
+ 4. After the webpage automatically refreshes, you'll see at the top 'Your site is life at https://kmarik.github.io/fact-quest/
 
  You can for fork the repository by following these steps:
 1. Go to the GitHub repository
@@ -426,13 +438,22 @@ Select the '<> Code' drop down button then copy the URL
 ### Credits 
 #### Media 
 In order of appearance:
-- Carousel images 1, 2 and 4: Photo by Spacejoy on [Unsplash](https://unsplash.com/@spacejoy)
-- Carousel image 3: by Medhat Ayad on [Pexels](https://www.pexels.com/photo/3d-model-3ds-max-arcviz-bath-towels-543798/)
-- Founder image: by Emmy E [Pexels](https://www.pexels.com/photo/woman-wearing-gray-notch-lapel-suit-jacket-2381069/)
-- Co founder image: by Alina Matveycheva [Pexels](https://www.pexels.com/photo/woman-standing-in-white-suit-jacket-25985701/)
-- Project images: by Spacejoy on [Unsplash](https://unsplash.com/@spacejoy) 
-- Contact us image: by Wilcle Nunes on [Pexels](https://www.pexels.com/photo/decor-in-luxurious-apartment-27059631/)
-- 404 error image: on Freepik [Freepik](https://www.freepik.com/free-vector/error-404-concept-landing-page_8794579.htm#fromView=keyword&page=1&position=38&uuid=2e18e1a6-3a97-492a-8ee2-60789fc2387d)
+- About us image 1: by Annie Spratt [Unsplash](https://unsplash.com/photos/boy-writing-ORDz1m1-q0I)
+- About us image 2: by Walls.io [Unsplash](https://unsplash.com/photos/a-group-of-women-sitting-around-a-conference-table-eiUFKyL9zeM)
+- About us image 3: by 8 verthing [Unsplash](https://unsplash.com/photos/red-and-white-game-on-led-signage-k_pBB5wJtaU)
+
+- Quiz game question images in order: 
+1. Question 1 image by: Anthony Choren [Unsplash](https://unsplash.com/photos/yugoslavia-flag-under-blue-sky-lYzap0eubDY)
+ 2. Question 2 image by: Bolivianteligen [Unsplash](https://unsplash.com/photos/a-group-of-planets-in-the-dark-sky-_75VdeLT3BI)
+ 3. Question 4 image by: Kyle Head [Unsplash](https://unsplash.com/photos/silhouette-of-three-performers-on-stage-p6rNTdAPbuk)
+ 4. Question 4 image by: Hans Reiners [Unsplash](https://unsplash.com/photos/three-clear-beakers-placed-on-tabletop-lQGJCMY5qcM)
+ 5. Question 6 image by: Ivan Torres [Unsplash](https://unsplash.com/photos/pizza-with-berries-MQUqbmszGGM)
+ 6. Question 6 image by: Dan Cristian Pa Dure [Unsplash](https://unsplash.com/photos/a-blackboard-with-a-bunch-of-diagrams-on-it-h3kuhYUCE9A)
+ 7. Question 7 image by: Nasa [Unsplash](https://unsplash.com/photos/earth-with-clouds-above-the-african-continent-vhSz50AaFAs)
+ 8. Question 8 image by: Eutah Mizushima [Unsplash](https://unsplash.com/photos/river-between-trees-under-blue-sky-OWwK_0_EnxY)
+ 9. Question 9 image by: Jack Ansety Ht [Unsplash](https://unsplash.com/photos/lake-between-trees-and-mountains-HtUBBdNDxpQ)
+10. Question 10 image by: Vimal S [Unsplash](https://unsplash.com/photos/shape-KMOSPP_iYV8)
+
 
 #### Code
 In order of appearance 
