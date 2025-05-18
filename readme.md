@@ -75,17 +75,22 @@
 2. As a first time user, I want to play the game easily.
 3. I want a simple way to start playing without signing up. 
 4. I want to visit the 'About Us' page to learn more. 
-5. I want to contact support if something goes wrong.  
+5. I want to view a quiz question with an image and multiple answer options.
+6. I want to see a visible countdown timer showing the remaining time to answer.
+7. I want to retry the quiz game if I run out of time.
+8. I want to see my score and retry if my score is low.
+9. I want to contact support if something goes wrong.  
 
 #### Returning User
-6. I want to play the quiz again even if it's the same questions. 
-7. I want to improve my score and see if I remember the answers. 
-8. I want to challenege my work colleague/teams and friends to beat my score  
+10. I want to play the quiz again even if it's the same questions. 
+11. I want to improve my score and see if I remember the answers. 
+12. I want to challenege my work colleague/teams and friends to beat my score  
 
 #### Site Owner
-9. I want the quiz questions to stay the same so users can retry them.
-10. I want to make sure users have a smooth, fun experience each time they visit.
-11. I want to see how people use the site and improve it based on feedback.
+13. I want the quiz questions to stay the same so users can retry them.
+14. I want to make sure users have a smooth, fun experience each time they visit.
+15. I want to see how people use the site and improve it based on feedback.
+
 
 
 
@@ -125,83 +130,82 @@ The page is structured in a easy, user friendly way. When the user arrive on the
 - Bootstrap v5.03
 - Git 
 - GitHub
-- Gidpod
+- Visual Studio Code
 - Balsamiq
 - Google Fonts
 - Image Color Picker 
 - Font Awesome
 - Pexels
 - Unsplash
+- Freepik
 - Favicon.io
 - Jquery?
 
 ### Features
-The page consists of four pages and ten features. 
+The page consists of four pages and eleven features. 
 
 1. Logo and Navigation Bar
-<img src="docs/features/logo-and-navbar.png">
+<img src="assets/docs/features/navbar-feature.png">
 
 - Featured on all four pages 
 - The navbar is responsive and changes to a toggler on smaller screens (320px and up, 576px and up to 992px). It includes link to the Homepage, About us page, Projects page and Contact us page
 - It allows users to easily navigate the page 
+- User stories covered : 
+
+2. Start Game Button 
+<img src="assets/docs/features/game-button-feature.png">
+
+- Featured on the home page and allows the user to start the game quicker than clicking 'Quiz Game' in the navbar. 
+
+3. About Us 
+<img src="assets/docs/features/about-us.png">
+<img src="assets/docs/features/about-us-2.png">
+
+- Provides users with a clear understanding of what Fact Quest offers and who the intended audience are.
+
+4. Quiz Game (timer)
+<img src="assets/docs/features/timer.png">
+
+- Provides the user with a countdown. 
+
+5. Quiz Game (question and multiple choice answers)
+<img src="assets/docs/features/multiple-choice.png">
+
+- The game has ten different questions with four multiple choice answers. 
+
+6. Quiz Game (restart button)
+<img src="assets/docs/features/restart-button.png">
+
+- When the timer is up or the quiz game is done the player can restart the quiz by clicking the 'Restart' button. 
+
+7. Quiz Game (game over page)
+<img src="assets/docs/features/game-over.png">
+
+- This is a separate page that appears only when the quiz is incomplete and the timer runs out, displaying the user's score up to that point.
+
+8. Quiz Game (score page)
+<img src="assets/docs/features/score.png">
+
+- This is a dedicated results page that appears only after the quiz is completed. It displays the player's score and indicates whether they have passed or not.
+
+9. Contact Form
+<img src="assets/docs/features/contact-form.png">
+
+- A way for the user to send written enquiries about the game or website. 
+
+10. Contact Info
+<img src="assets/docs/features/contact-info.png">
+
+- Provides the user with a phone number and email. 
+
+11. Footer 
+<img src="assets/docs/features/footer.png">
+
+- Featured on all four pages
+- Consits of four social media links (Facebook, Twitter, Youtube and Instagram)
  
- 2. Carousel
- <img src="docs/features/carousel.png">
 
- - Presents to the user the companys expertise showcasing its previous interior design work
- - Gives options for the user to navigate the slideshow back and fourth via the arrows
- - User stories covered: 3
 
-3. Subscription form
-<img src="docs/features/subscription-form.png">
-
-- Allows customers to sign up to the newsletter to for latest updates and deals
-- User stories covered: 7, 8 and 13
-
- 
-4. Footer
-<img src="docs/features/footer.png">
-
- - Featured on all four pages 
- - Consits of four social media links (Facebook, Twitter, Youtube and Instagram)
- - User stories covered: 6,7,8 and 9
-
-5. About us
-<img src="docs/features/about-us.png">
- 
- - Gives a detail description of what 'Luxury Loom Interiors' company has to offer 
- - Includes two images of the founder and co founder of the company
- - User stories covered: 2, 3, 14 
-
-6. Projects
-<img src="docs/features/projects.png">
-
-- Presents to the user the project outcomes that the company have done for its clients within the United Kingdom with a small description of the location of each project
-- User stories covered: 3 and 6  
-
-7. Contact Form
-<img src="docs/features/contact-form.png">
-
-- A way for the user to send written enquiries to the company
-- User stories covered: 4 and 15
-
-8. Map
-<img src="docs/features/map.png">
-
-- Shows the precise location of the showcase studio
-- User stories covered: 11 and 15
-
-9. Info section
-<img src="docs/features/info-box.png">
-
-- Provides the user with a phone number, email and address
-- User stories covered: 1, 4, 9, 15
-
-10. 404 page
-<img src="docs/features/404.png">
-
-- Provides a clear and visible message that the page is not found
-- User stories covered: 12
 
 ### Testing
 #### HTML Validation
