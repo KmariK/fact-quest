@@ -43,7 +43,7 @@
 - Learn fun facts and test knowledge. 
 - Enjoy playing an easy, quick quiz. 
 - See score right after finishing. 
-- Use the site/play the quiz on any phone, tablet or computer
+- Use the site/play the quiz on any phone, tablet or computer.
 
 #### Site Owner Goals
 - Attract new users and keep them coming back. 
@@ -59,14 +59,14 @@
 - For anyone for fun its to relax or challenge friends.  
 
 #### User Requirments and Expectations
-- A simple navigation system which works well on phones, tablets and computers
-- Gives score when the game is done or timer is up
-- Shows current question and time left
-- Option to replay quiz when the game is done or time is up
-- A timer for users who want a challenge 
-- Clear buttons and readable text
-- Easy contact options
-- Accessibility
+- A simple navigation system which works well on phones, tablets and computers.
+- Gives score when the game is done or timer is up.
+- Shows current question and time left.
+- Option to replay quiz when the game is done or time is up.
+- A timer for users who want a challenge. 
+- Clear buttons and readable text.
+- Easy contact options.
+- Accessibility.
 
 #### User Stories:
 
@@ -100,7 +100,7 @@
 The webpage was designed with a simple, minimalist approach to enhance user experience. It is clear and intuitive, allowing users to easily understand the quiz's purpose and participate without any hassle. 
 
 #### Colours:
-For the colour scheme bright colours were chosen to engage the user. I selected the colors by browsing through various options and choosing the ones that best suited the aesthetic and purpose of my site. [Image Color Picker](https://imagecolorpicker.com/) website and searched for there HEX Code. The two colours I chose are #d5dced; used for backround colour and #0dbffe; used as a font colour. 
+For the colour scheme bright colours were chosen to engage the user. I selected the colors by browsing through various options and choosing the ones that best suited the aesthetic and purpose of my site. [Image Color Picker](https://imagecolorpicker.com/) website and searched for there HEX Code. The two colours I chose are #d5dced; used for backround colour and #0dbffe; used for the logo font colour. 
 
 #### Fonts:
 The two main fonts are Press Start 2P which is the primary font with a fallback of sans-serif and Roboto which is the secondary font with a fall back of sans-serif.
@@ -110,7 +110,7 @@ The page is structured in a easy, user friendly way. When the user arrive on the
 1. A homepage with a navbar at the top and logo and a button to start the game. 
 2. A about us page with a descriptive insight of what the quiz is about, who and where the game can be played. 
 3. A quiz game page with a timer at the top that starts as soon as the page loads. The quiz has 10 questions, each with a matching image. Below each question are multiple choice answers. A "Next" button lets the user move to the next question.
-4. A contact page a contact form, a address and contact number, (ADD TO PAGE)
+4. A contact page a contact form, email address and contact number.
 
 #### Wireframes
 
@@ -216,13 +216,9 @@ The page consists of four pages and eleven features.
 - Consits of four social media links (Facebook, Twitter, Youtube and Instagram)
  - User stories covered: 16 
 
-
-
-
 ### Testing
 #### HTML Validation
 - The W3S Markup Validation Service was used to validate the HTML of the website showing the validation before and after once it has been fixed.
-
 
 <details><summary>Home page</summary><img src="docs/validation/index-html -validator-1 .png">Fixed:
 <img src="docs/validation/index-html-validator-2.png"></details>
@@ -438,21 +434,22 @@ Select the '<> Code' drop down button then copy the URL
 ### Credits 
 #### Media 
 In order of appearance:
-- About us image 1: by Annie Spratt [Unsplash](https://unsplash.com/photos/boy-writing-ORDz1m1-q0I)
-- About us image 2: by Walls.io [Unsplash](https://unsplash.com/photos/a-group-of-women-sitting-around-a-conference-table-eiUFKyL9zeM)
-- About us image 3: by 8 verthing [Unsplash](https://unsplash.com/photos/red-and-white-game-on-led-signage-k_pBB5wJtaU)
+1. About us images: 
+ -  Image 1 by: Annie Spratt [Unsplash](https://unsplash.com/photos/boy-writing-ORDz1m1-q0I)
+- Image 2 by: Walls.io [Unsplash](https://unsplash.com/photos/a-group-of-women-sitting-around-a-conference-table-eiUFKyL9zeM)
+- Image 3 by: 8 verthing [Unsplash](https://unsplash.com/photos/red-and-white-game-on-led-signage-k_pBB5wJtaU)
 
-- Quiz game question images in order: 
-1. Question 1 image by: Anthony Choren [Unsplash](https://unsplash.com/photos/yugoslavia-flag-under-blue-sky-lYzap0eubDY)
- 2. Question 2 image by: Bolivianteligen [Unsplash](https://unsplash.com/photos/a-group-of-planets-in-the-dark-sky-_75VdeLT3BI)
- 3. Question 4 image by: Kyle Head [Unsplash](https://unsplash.com/photos/silhouette-of-three-performers-on-stage-p6rNTdAPbuk)
- 4. Question 4 image by: Hans Reiners [Unsplash](https://unsplash.com/photos/three-clear-beakers-placed-on-tabletop-lQGJCMY5qcM)
- 5. Question 6 image by: Ivan Torres [Unsplash](https://unsplash.com/photos/pizza-with-berries-MQUqbmszGGM)
- 6. Question 6 image by: Dan Cristian Pa Dure [Unsplash](https://unsplash.com/photos/a-blackboard-with-a-bunch-of-diagrams-on-it-h3kuhYUCE9A)
- 7. Question 7 image by: Nasa [Unsplash](https://unsplash.com/photos/earth-with-clouds-above-the-african-continent-vhSz50AaFAs)
- 8. Question 8 image by: Eutah Mizushima [Unsplash](https://unsplash.com/photos/river-between-trees-under-blue-sky-OWwK_0_EnxY)
- 9. Question 9 image by: Jack Ansety Ht [Unsplash](https://unsplash.com/photos/lake-between-trees-and-mountains-HtUBBdNDxpQ)
-10. Question 10 image by: Vimal S [Unsplash](https://unsplash.com/photos/shape-KMOSPP_iYV8)
+2. Quiz game question images in order: 
+- Question 1 image by: Anthony Choren [Unsplash](https://unsplash.com/photos/yugoslavia-flag-under-blue-sky-lYzap0eubDY)
+ - Question 2 image by: Bolivianteligen [Unsplash](https://unsplash.com/photos/a-group-of-planets-in-the-dark-sky-_75VdeLT3BI)
+ -  Question 4 image by: Kyle Head [Unsplash](https://unsplash.com/photos/silhouette-of-three-performers-on-stage-p6rNTdAPbuk)
+ -  Question 4 image by: Hans Reiners [Unsplash](https://unsplash.com/photos/three-clear-beakers-placed-on-tabletop-lQGJCMY5qcM)
+ - Question 6 image by: Ivan Torres [Unsplash](https://unsplash.com/photos/pizza-with-berries-MQUqbmszGGM)
+ - Question 6 image by: Dan Cristian Pa Dure [Unsplash](https://unsplash.com/photos/a-blackboard-with-a-bunch-of-diagrams-on-it-h3kuhYUCE9A)
+ - Question 7 image by: Nasa [Unsplash](https://unsplash.com/photos/earth-with-clouds-above-the-african-continent-vhSz50AaFAs)
+ - Question 8 image by: Eutah Mizushima [Unsplash](https://unsplash.com/photos/river-between-trees-under-blue-sky-OWwK_0_EnxY)
+ - Question 9 image by: Jack Ansety Ht [Unsplash](https://unsplash.com/photos/lake-between-trees-and-mountains-HtUBBdNDxpQ)
+- Question 10 image by: Vimal S [Unsplash](https://unsplash.com/photos/shape-KMOSPP_iYV8)
 
 
 #### Code
@@ -470,6 +467,7 @@ In order of appearance
 ### Acknowledgements
 I would like to take the opportunity to thank: 
 
+- My tutor Ashley Oliver, for his unwavering support and for providing clarity whenever I struggled to understand.
 - My mentor Mo Shami, for his support and guidance during the project insuring I meet the deadline successfully. 
 - My newfound virtual friends on the Code Insitute Slack for their support and help. 
 
