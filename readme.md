@@ -220,23 +220,23 @@ The page consists of four pages and eleven features.
 #### HTML Validation
 - The W3S Markup Validation Service was used to validate the HTML of the website showing the validation before and after once it has been fixed.
 
-<details><summary>Home page</summary><img src="docs/validation/index-html -validator-1 .png">Fixed:
-<img src="docs/validation/index-html-validator-2.png"></details>
+<details><summary>Home page</summary><img src="assets/docs/validation/homepage-validation-1.png">Fixed:
+<img src="assets/docs/validation/homepage-validation-2.png"></details>
 
-<details><summary>About us page</summary><img src="docs/validation/about-us-html-validator-1.png">Fixed:
-<img src="docs/validation/about-us-html-validator-2.png">
+<details><summary>About us page</summary><img src="assets/docs/validation/about-us-validation-1.png">Fixed:
+<img src="assets/docs/validation/about-us-validation-2.png">
 </details>
 
-<details><summary>Quiz game page</summary><img src="docs/validation/project-page-validator-1.png">Fixed:
-<img src="docs/validation/project-page-validator-2.png">
+<details><summary>Quiz game page</summary><img src="assets/docs/validation/quiz-game-validation-1.png">Fixed:
+<img src="assets/docs/validation/quiz-game-validation-2.png">
 </details>
 
-<details><summary>Contact page</summary><img src="docs/validation/contact-us-page-validator-1.png">Fixed:
-<img src="docs/validation/contact-us-page-validator-2.png">
+<details><summary>Contact page</summary><img src="assets/docs/validation/contact-us-validation-1.png">Fixed:
+<img src="assets/docs/validation/contact-us-validation-2.png">
 </details>
 
-<details><summary>404 page</summary><img src="docs/validation/404-validation-1.png">Fixed:
-<img src="docs/validation/404-validation-2.png">
+<details><summary>404 page</summary><img src="assets/docs/validation/404-validation-1.png">Fixed:
+<img src="assets/docs/validation/404-validation-2.png">
 </details>
 
 #### CSS Validation
@@ -290,6 +290,7 @@ The page consists of four pages and eleven features.
 The website was tested on the following devices:
 - Chromebook Plus 14a
 - Iphone 12pro Max 
+- Iphone 14
 - Iphone 15
 #### Browser compatibility
 The website was tested on the following browsers:
@@ -297,107 +298,114 @@ The website was tested on the following browsers:
 - Microsoft Edge 
 
 #### Testing user stories
-1. As a first time user, I want to know where the business is located i.e country & city.
+1. As a first time user, I want to know what the quiz is about.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Map | Navigate to the Contact Us page, locate the Google Map | Locating a map showing the location of the show room studio| Works as expected |
+| Navbar | Navigate to the About Us page | Welcomed with 'What is Fact Quest?' question with text below| Works as expected |
 
-2. As a first time user, I want to know what services the business has to offer.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| About us page |  Navigate to the About us page | Paragraphs on what the business is about and what it has to offer | Works as expected |
-
-3. As a first time user, I want to get a feel of how the business will elevate my space.
+2.  As a first time user, I want to play the game easily.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| About us page | Nagivate to the About us page | Written information on how the company will elevate a potential clients space | Works as expected |
-| Projects page |  Navigate to the Projects page | See images of projects the business has done for its clients| Works as expected |
+| Button | On the hope page there is a 'CLICK HERE TO START QUIZ!' button | Click the button to start the quiz| Works as expected |
 
-4. As a first time user, I want to know how best to contact the company.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Contact info |  Navigate to the Contact us page | Scroll down to the contact info section to see the phone number, email and address| Works as expected |
-
-5. As a first time user, I want a clear explanation that the page I'm looking for cannot be found
+3.   I want a simple way to start playing without signing up.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| 404 error page|  Break the website link | A 404 error image and link to the website will be shown | Works as expected |
+| Button | On the hope page there is a 'CLICK HERE TO START QUIZ!' button | Click the button to start the quiz| Works as expected |
 
-6. As a returning user, I want to see the companys latest project.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Projects page |  Navigate to the Projects page | See images of projects the business has done for its clients| Works as expected |
-
-7. As a returning user, I want to know if there is a new service.
+4. I want to visit the 'About Us' page to learn more. 
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Home page |  Navigate to the Home page then scroll down to the subcription form then subscribe | Once subscribed the customer will be updated if there is a new service | Works as expected |
+| Navbar | Navigate to the About Us page | Welcomed with 'What is Fact Quest?' question with text below| Works as expected |
+
+5. I want to view a quiz question with an image and multiple answer options. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Navbar | Navigate to the Quiz Game page| Welcomed with a timer, quiz question, quiz image and multiple choice answers| Works as expected |
+
+6. I want to view a quiz question with an image and multiple answer options. 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Navbar | Navigate to the Quiz Game page| Welcomed with a timer, quiz question, quiz image and multiple choice answers| Works as expected |
+
+7. I want to retry the quiz game if I run out of time.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Restart button | When the timer is up a restart button will be below| Once the button is clicked it will restart the quiz| Works as expected |
  
-8. As a returning user, I want to know if there is any new offers.
+8. I want to see my score and retry if my score is low.
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Restart button | Finish the quiz | 'Restart' button appears below | Works as expected |
+
+9. I want to contact support if something goes wrong. 
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Home page |  Navigate to the Home page then scroll down to the subcription form then subscribe | Once subscribed the customer will be updated if there is new offers | Works as expected |
+| Navbar | Navigate to the Contact Us page| A form that can be filled out to send enquiries and contact email and number below the form| Works as expected | 
 
-9. As a returning user, I want to know if the contact details are the same or have changed. 
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Home page |  Navigate to the Home page then scroll down to the subcription form then subscribe | Once subscribed the customer will be updated if the contact details have changed | Works as expected |
-
-10. As a returning user, I want to know who founded the company.
+10. I want to play the quiz again even if it's the same questions. 
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| About us page |  Navigate to the About us page and scroll down | Written information on who founded the company and images of the founder & co founder | Works as expected |
+| Restart button | select the 'Restart' button at the end of the quiz| Quiz restarts from question 1 with all scores and selections reset| Works as expected |
 
-11. As a returning user, I want to get directions to the companys showroom studio. 
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Map | Navigate to the Contact Us page, locate the Google Map | Locating a map showing the location of the show room studio| Works as expected |
-
-12. As a returning user, I want the 404 page to include a quick way to navigate to the pages on the website.
+11. I want to improve my score and see if I remember the answers.  
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Link | Click the link highlighted in blue | Direct back to the website | Works as expected |
+| Restart button| At the end of the quiz select the 'Restart' button | Quiz restarts, allowing user to retake it and try for a higher score | Works as expected |
 
-13. As the site owner, I want users to find news about offers, latest trends and expert tips.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Home page |  Navigate to the Home page then scroll down to the subscription form then subscribe | Once subscribed the customer will be updated on offers, latest trends and expert tips | Works as expected |
-
-14. As the site owner, I want users to get to know the business and how it evolved. 
+12.  I want to challenege my work colleague/teams and friends to beat my score  
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| About us page | Nagivate to the About us page | Written information on the company and how it evolved | Works as expected |
+| 'CLICK HERE TO START QUIZ' button | User completes quiz |Final score is displayed | Works as expected |
 
-15. As the site owner, I want users to be able to contact us via a form, email, telephone or our showcase studio location.
+13. I want the quiz questions to stay the same so users can retry them.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Contact form | Nagivate to the Contact us page | Contact form requesting name, email and message| Works as expected |
-| Contact info |  Navigate to the Contact us page | Scroll down to the contact info section to see the phone number and address| Works as expected |
-| Map | Navigate to the Contact us page, locate the Google Map | Locating a map showing the location of the show room studio| Works as expected |
+| Static questions | Click 'Restart' button | The same set of questions is shown every time the game is played | Works as expected |
+
+
+14.  I want to make sure users have a smooth, fun experience each time they visit.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Responsive layout| User access the website on different screen sizes | Quiz adjusts properly on mobile, tablet, and desktop | Works as expected |
+
+
+
+15.  I want to see how people use the site and improve it based on feedback.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Form | Navigate to the 'Contact Us' page | A simple form or prompt allows user to leave comments or suggestions| Works as expected |
+
+16. I want to display links to my social media profiles on the website. So that users can easily find and follow Fact Quest on platforms like Instagram, Twitter, or Facebook to stay updated, share content, and grow the community
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Social media icons in the footer | User clicks on a social media icon |The corresponding social media page opens in a new browser tab | Works as expected |
+
+
 
 
 ### Bugs
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| Home page link stays highlighted when visiting another page | Change active atribute to the correct page |
-| The contact info section on Iphone screen size 468px was beside the map but I wanted it above the map | Reduced the size of the map (iframe) to width and height of 300px which automatically rearranged the map to be below the contact info section |
-| Footer on screen size 320 px and 576 px  was showing white space after the footer| Set footer colour to secondary colour |
+| The menu not opening on smaller screen sizes (320px, 576px and 768px) | Copied the JS scripted tag from Bootstrap  |
+| Image on quiz game was not loading | Copied the JS scripted tag from Bootstrap  | Added 'image'wrapper' div to html with the image src inside and on JS added 'const wrapEl = document.getElementById("image-wrapper");; to the loadQuestion fuction
+
 
 
 ### Deployment
