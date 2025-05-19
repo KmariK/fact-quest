@@ -397,15 +397,12 @@ The website was tested on the following browsers:
 | Social media icons in the footer | User clicks on a social media icon |The corresponding social media page opens in a new browser tab | Works as expected |
 
 
-
-
 ### Bugs
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
 | The menu not opening on smaller screen sizes (320px, 576px and 768px) | Copied the JS scripted tag from Bootstrap  |
 | Image on quiz game was not loading | Copied the JS scripted tag from Bootstrap  | Added 'image'wrapper' div to html with the image src inside and on JS added 'const wrapEl = document.getElementById("image-wrapper");; to the loadQuestion fuction
-
 
 
 ### Deployment
@@ -458,6 +455,12 @@ In order of appearance:
  - Question 8 image by: Eutah Mizushima [Unsplash](https://unsplash.com/photos/river-between-trees-under-blue-sky-OWwK_0_EnxY)
  - Question 9 image by: Jack Ansety Ht [Unsplash](https://unsplash.com/photos/lake-between-trees-and-mountains-HtUBBdNDxpQ)
 - Question 10 image by: Vimal S [Unsplash](https://unsplash.com/photos/shape-KMOSPP_iYV8)
+
+3. Quiz game, game over image: [Freepik](https://www.freepik.com/free-photo/stressed-young-student-girl-wearing-bandana-backpack-showing-alarm-clock-making-stop-gesture-screaming-with-closed-eyes-isolated-blue-background_27467065.htm#fromView=search&page=1&position=46&uuid=3af0632b-ad45-478d-bd4b-314dfe6eca04&query=times+up)
+
+4. Quiz game, score image (cropped and split into two): by juicy_fish [Freepik](https://www.freepik.com/free-vector/circle-thumbs-up-set_81409606.htm#fromView=image_search&page=1&position=4&uuid=c4190681-be96-4e3d-b359-3921a40c8693)
+
+3. 404 image: [Freepik](https://www.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_8030430.htm#fromView=image_search&page=1&position=1&uuid=1854bd59-2290-44aa-9e76-9765b4e7ee60&query=404+error)
 
 
 #### Code
