@@ -25,6 +25,7 @@
 6. [Testing](#testing)
 - [HTML Validation](#html-validation)
 - [CSS Validation](#css-validation)
+- [JS Validation](#javascript-validation)
 - [Accessibility](#accessibility)
 - [Performance](#performance) 
 - [Device Testing](#device-testing) 
@@ -136,7 +137,6 @@ The page is structured in a easy, user friendly way. When the user arrive on the
 - Google Fonts
 - Image Color Picker 
 - Font Awesome
-- Pexels
 - Unsplash
 - Freepik
 - Favicon.io
@@ -246,8 +246,8 @@ The page consists of four pages and eleven features.
 <img src="assets/docs/validation/css-validator-2.png"></details>
 
 #### JavaScript Validation
-- The JS Hint validator was used to validate the Javascript of the website.
-<details><summary>Javascript</summary><img src="assets/docs/validation/js-validation.png">
+- The JSlint validator was used to validate the Javascript of the website.
+<details><summary>Javascript</summary><img src="">
 </details> 
 
 
@@ -341,6 +341,7 @@ The website was tested on the following browsers:
 | Restart button | When the timer is up a restart button will be below| Once the button is clicked it will restart the quiz| Works as expected |
  
 8. I want to see my score and retry if my score is low.
+
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Restart button | Finish the quiz | 'Restart' button appears below | Works as expected |
@@ -402,7 +403,7 @@ The website was tested on the following browsers:
 | **Bug** | **Fix** |
 | ----------- | ----------- |
 | The menu not opening on smaller screen sizes (320px, 576px and 768px) | Copied the JS scripted tag from Bootstrap  |
-| Image on quiz game was not loading | Copied the JS scripted tag from Bootstrap  | Added 'image'wrapper' div to html with the image src inside and on JS added 'const wrapEl = document.getElementById("image-wrapper");; to the loadQuestion fuction
+| Image on quiz game was not loading | Added 'image'wrapper' div to html with the image src inside and on JS added 'const wrapEl = document.getElementById("image-wrapper");; to the loadQuestion fuction
 
 
 ### Deployment
@@ -467,7 +468,7 @@ In order of appearance:
 In order of appearance 
 - The HTML for the responsive [Navbar with toggler](https://getbootstrap.com/docs/5.2/components/navbar/) was taken from the Bootstrap v5.3 documentation. 
 - The ['CLICK HERE TO START QUIZ!' button](https://getbootstrap.com/docs/5.3/components/buttons/#base-class) on the home page was taken from Bootstrap v5.3 documentation. 
-- The About Us [cards](https://getbootstrap.com/docs/5.3/components/card/#about) pn the About Us page was taken from Bootstrap v5.3 documentation.
+- The About Us [cards](https://getbootstrap.com/docs/5.3/components/card/#about) on the About Us page was taken from Bootstrap v5.3 documentation.
 - The [Contact Form](https://getbootstrap.com/docs/5.3/forms/overview/#overview) on the Contact Us page was taken from Bootstrap v5.3 documentation. 
 
 - The CSS code for the contact form on the contact us page was taken from [ChatGPT](https://chatgpt.com/).

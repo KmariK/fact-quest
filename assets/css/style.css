@@ -130,7 +130,7 @@
     border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
    }
-   
+
    .options {
     padding-top: 25px;
     display: flex;
@@ -264,6 +264,10 @@
     /*Quiz game page*/
     #question {
         font-size: 120%;
+    }
+
+    #game-image {
+        padding: 8px;
     }
 
     .btn {
