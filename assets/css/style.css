@@ -57,17 +57,17 @@
     }
   
     /*Home page*/
-   body.index-page {
+   .index-page {
     background-color:var(--primary-color);
    }
   
    .main-container {
-    height: 25vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  flex-direction: column;
+  justify-content: center;   /* vertical centering */
+  align-items: center;       /* horizontal centering */
+  min-height: 100vh;  
+  text-align: center;
    }
 
    .main-container h2 {
@@ -125,7 +125,12 @@
     align-items: center;
     margin: 20px 0;
    }
-
+   
+   #game-image {
+    border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+   }
+   
    .options {
     padding-top: 25px;
     display: flex;
@@ -394,8 +399,9 @@
         #logo {
             font-size: 250%;
         }
-        
 
+        
+        
         /*Contact us page*/
         #contact-us-form {
             background-color: #fff;

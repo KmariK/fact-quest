@@ -466,13 +466,11 @@ In order of appearance:
 #### Code
 In order of appearance 
 - The HTML for the responsive [Navbar with toggler](https://getbootstrap.com/docs/5.2/components/navbar/) was taken from the Bootstrap v5.3 documentation. 
-- [The carousel](https://getbootstrap.com/docs/5.3/components/carousel/#how-it-works) on the home page was taken from Bootstrap v5.3 documentation. 
-- The [subsciption form](https://getbootstrap.com/docs/5.3/forms/overview/#overview) on the home page was taken from Bootstrap v5.3 documentation. 
-- The [alignment of the images](https://getbootstrap.com/docs/4.0/content/images/) on the about us page was taken from Bootstrap v5.3 documentation. 
-- The [alignment of the images](https://getbootstrap.com/docs/4.0/content/images/) on the projects page was taken from Bootstrap v5.3 documentation. 
-- The [opening times table](https://getbootstrap.com/docs/5.3/content/tables/#overview) on the contact us page was taken from Bootstrap v5.3
-- The CSS code for the contact form on the contact page was taken from [W3 Schools](https://www.w3schools.com/css/css_inline-block.asp).
-- The CSS code for the contact info media query for screen sizes 768px and 992px was taken from [Stack overflow](https://stackoverflow.com/questions/48516538/flex-align-items-center-not-centering-items).
+- The ['CLICK HERE TO START QUIZ!' button](https://getbootstrap.com/docs/5.3/components/buttons/#base-class) on the home page was taken from Bootstrap v5.3 documentation. 
+- The About Us [cards](https://getbootstrap.com/docs/5.3/components/card/#about) pn the About Us page was taken from Bootstrap v5.3 documentation.
+- The [Contact Form](https://getbootstrap.com/docs/5.3/forms/overview/#overview) on the Contact Us page was taken from Bootstrap v5.3 documentation. 
+
+- The CSS code for the contact form on the contact us page was taken from [ChatGPT](https://chatgpt.com/).
 
 
 ### Acknowledgements
