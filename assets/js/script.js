@@ -1,53 +1,56 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
   const startBtn = document.getElementById("startQuizBtn");
   const nextBtn = document.getElementById("quiz-game-next");
   const restartBtn = document.getElementById("restart-btn");
 
   if (startBtn) {
-    startBtn.addEventListener("click", () => {
+    startBtn.addEventListener("click", function() {
       window.location.href = "quiz-page.html";
     });
   }
 
   const questions = [
     {
-      question: "What is the capital of France?",
+      answer: 1,
       image: "assets/images/france-flag.jpg",
       options: ["London", "Paris", "Rome", "Berlin"],
-      answer: 1
+      question: "What is the capital of France?"
     },
     {
-      question: "What is the largest planet?",
+      answer: 1,
       image: "assets/images/planets.jpg",
       options: ["Earth", "Jupiter", "Mercury", "Venus"],
-      answer: 1
+      question: "What is the largest planet?"
     },
     {
-      question: "Who wrote Romeo and Juliet?",
+      answer: 0,
       image: "assets/images/stage-play.jpg",
-      options: ["William Shakespeare", "F.Scott Fitzgearld", "J.K Rowling", "Maya Angelou"],
-      answer: 0
+      options: ["William Shakespeare", 
+        "F.Scott Fitzgearld",
+        "J.K Rowling",
+        "Maya Angelou"],
+      question: "Who wrote Romeo and Juliet?"
     },
     {
-      question: "What is the chemical symbol for water?",
+      answer: 2,
       image: "assets/images/chemicals.jpg",
       options: ["AU", "Li", "H2O", "Mg"],
-      answer: 2
+      question: "What is the chemical symbol for water?"
     },
     {
-      question: "Which country is famous for inventing pizza?",
+      answer: 3,
       image: "assets/images/pizza.jpg",
       options: ["France", "England", "Mexico", "Italy"],
-      answer: 3
+      question: "Which country is famous for inventing pizza?"
     },
     {
-      question: "What is the square root of 64?",
+      answer: 0,
       image: "assets/images/maths.jpg",
       options: ["8", "16", "-23", "5"],
-      answer: 0
+      question: "What is the square root of 64?"
     },
     {
-      question: "What does NASA stand for?",
+      answer: 0,
       image: "assets/images/nasa.jpg",
       options: [
         "National Aeronautics and Space Administration",
@@ -55,25 +58,25 @@ document.addEventListener("DOMContentLoaded", () => {
         "National Association of Space Astronauts",
         "New Aeronautics and Space Association"
       ],
-      answer: 0
+      question: "What does NASA stand for?"
     },
     {
-      question: "Which animal is known as the 'King of the Jungle'?",
+      answer: 2,
       image: "assets/images/jungle.jpg",
       options: ["Cheater", "Snake", "Lion", "Elephant"],
-      answer: 2
+      question: "Which animal is known as the 'King of the Jungle'?"
     },
     {
-      question: "What is the longest river in the world?",
+      answer: 0,
       image: "assets/images/river.jpg",
       options: ["River Nile", "River Thames", "Amazon River", "Yangtze River"],
-      answer: 0
+      question: "What is the longest river in the world?"
     },
     {
-      question: "How many sides does a hexagon have?",
+      answer: 1,
       image: "assets/images/shapes.jpg",
       options: ["10", "6", "7", "9"],
-      answer: 1
+      question: "How many sides does a hexagon have?"
     }
   ];
 
@@ -89,7 +92,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const wrapEl = document.getElementById("image-wrapper");
     const answerEl = document.getElementById("answer");
 
-    if (!qEl || !optsEl || !imgEl || !wrapEl || !answerEl) return;
+    if (!qEl || !optsEl || !imgEl || !wrapEl || !answerEl) {
+      return;
+    }
+    
 
     qEl.textContent = questions[currentQuestion].question;
     optsEl.innerHTML = "";
@@ -145,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Final quiz message
     if (qEl) {
-      qEl.textContent = "Quiz Complete!";
+      qEl.textContent = "";
       qEl.classList.add("quiz-complete");
     }
   

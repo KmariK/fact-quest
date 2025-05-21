@@ -247,7 +247,7 @@ The page consists of four pages and eleven features.
 
 #### JavaScript Validation
 - The JSlint validator was used to validate the Javascript of the website.
-<details><summary>Javascript</summary><img src="">
+<details><summary>Javascript</summary><img src="assets/docs/validation/js-validation copy.png">
 </details> 
 
 
