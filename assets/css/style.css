@@ -48,8 +48,8 @@
 
     .page-container {
         min-height: 100vh;
-        display: flex;
-        flex-direction: column;
+        /*display: flex;
+        flex-direction: column;*/
     }
 
     .content-wrap {
@@ -61,18 +61,6 @@
     background-color:var(--primary-color);
    }
   
-   .main-container {
-    display: flex;
-  flex-direction: column;
-  justify-content: center;   /* vertical centering */
-  align-items: center;       /* horizontal centering */
-  min-height: 100vh;  
-  text-align: center;
-   }
-
-   .main-container h2 {
-    padding-bottom: 0;
-   }
 
   #startQuizBtn {
     font-weight: bolder;
@@ -339,7 +327,7 @@
         #logo {
             font-size: 150%;
         }
-        
+       
         /*Contact us page*/
           #contact-us-form {
             background-color: #fff;
