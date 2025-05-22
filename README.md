@@ -59,7 +59,7 @@
 - People looking for a quick fun fact quiz game, that can be played in schools, work and for fun.
 - For students it's for learning. 
 - For workers/teams it's for team bonding or training. 
-- For anyone for fun its to relax or challenge friends.  
+- For anyone, for fun its to relax or challenge friends.  
 
 #### User Requirments and Expectations
 - A simple navigation system which works well on phones, tablets and computers.
@@ -74,8 +74,8 @@
 #### User Stories:
 
 #### First-time User 
-1. As a first time user, I want to know what the quiz is about. 
-2. As a first time user, I want to play the game easily.
+1. I want to know what the quiz is about. 
+2. I want to play the game easily.
 3. I want a simple way to start playing without signing up. 
 4. I want to visit the 'About Us' page to learn more. 
 5. I want to view a quiz question with an image and multiple answer options.
@@ -95,25 +95,22 @@
 15. I want to see how people use the site and improve it based on feedback.
 16. I want to display links to my social media profiles on the website. So that users can easily find and follow Fact Quest on platforms like Instagram, Twitter, or Facebook to stay updated, share content, and grow the community
 
-
-
-
 ### Design
 #### Design Choices:
 The webpage was designed with a simple, minimalist approach to enhance user experience. It is clear and intuitive, allowing users to easily understand the quiz's purpose and participate without any hassle. 
 
 #### Colours:
-For the colour scheme bright colours were chosen to engage the user. I selected the colors by browsing through various options and choosing the ones that best suited the aesthetic and purpose of my site. [Image Color Picker](https://imagecolorpicker.com/) website and searched for there HEX Code. The two colours I chose are #d5dced; used for backround colour and #0dbffe; used for the logo font colour. 
+For the colour scheme, bright colours were chosen to engage the user. I selected the colors by browsing through various options and choosing the ones that best suited the aesthetic and purpose of my site. I found my desired colours on [Image Color Picker](https://imagecolorpicker.com/) website and searched for there HEX Code. The two colours I chose are #d5dced; used for backround colour and #0dbffe; used for the logo font colour. 
 
 #### Fonts:
 The two main fonts are Press Start 2P which is the primary font with a fallback of sans-serif and Roboto which is the secondary font with a fall back of sans-serif.
 
 #### Structure:
-The page is structured in a easy, user friendly way. When the user arrive on the website they are immediately welcomed with a logo on the center of the page below a familiar type of navigation bar to the right. The website consists of four pages:
+The page is structured in a easy, user friendly way. When the user arrives on the website they are immediately welcomed with the logo on the center of the page and above a familiar type of navigation bar to the right. The website consists of four pages:
 1. A homepage with a navbar at the top and logo and a button to start the game. 
 2. A about us page with a descriptive insight of what the quiz is about, who and where the game can be played. 
-3. A quiz game page with a timer at the top that starts as soon as the page loads. The quiz has 10 questions, each with a matching image. Below each question are multiple choice answers. A "Next" button lets the user move to the next question.
-4. A contact page a contact form, email address and contact number.
+3. A quiz game page with a timer at the top that starts as soon as the page loads. The quiz has 10 questions, each with a matching image. Below each question are multiple choice answers, and a "Next" button lets the user move to the next question when a answer is chosen. 
+4. A contact us page which consits of a contact form, email address and contact number.
 
 #### Wireframes
 
@@ -121,7 +118,7 @@ The page is structured in a easy, user friendly way. When the user arrive on the
 <details><summary>About Us</summary>
 <img src="assets/docs/wireframe/about-us-wireframe.png"></details>
 <details><summary>Quiz Game</summary>
-<img src="assets/docs/wireframe/about-us-wireframe.png"></details>
+<img src="assets/docs/wireframe/quiz-game-wireframe.png"></details>
 <details><summary>Contact Us</summary><img src="assets/docs/wireframe/contact-us-wireframe.png"></details>
 
 ### Technologies Used
@@ -151,7 +148,7 @@ The page consists of four pages and eleven features.
 <img src="assets/docs/features/navbar-feature.png">
 
 - Featured on all four pages 
-- The navbar is responsive and changes to a toggler on smaller screens (320px and up, 576px and up to 992px). It includes link to the Homepage, About us page, Projects page and Contact us page
+- The navbar is responsive and changes to a menu icon on smaller screens (320px and up, 576px and up to 992px). It includes link to the Home page, about us page, quiz game page and contact us page
 - It allows users to easily navigate the page 
 - User stories covered : 4, 14 
 
@@ -172,7 +169,7 @@ The page consists of four pages and eleven features.
 
 <img src="assets/docs/features/timer.png">
 
-- Provides the user with a countdown. 
+- Provides the user with a countdown when the game begins. 
 - User stories covered: 6
 
 5. Quiz Game (question and multiple choice answers)
@@ -196,7 +193,7 @@ The page consists of four pages and eleven features.
 8. Quiz Game (score page)
 <img src="assets/docs/features/score.png">
 
-- This is a dedicated results page that appears only after the quiz is completed. It displays the player's score and indicates whether they have passed or not.
+- This is a dedicated results page that appears only after the quiz is completed. It displays the player's score and indicates whether they have passed or not. The thumbs up image (green) indicates the player has passed and the thumbs down image (red) indicates the player has not pass the quiz.
 - User stories covered:8, 11
 
 9. Contact Form
@@ -208,7 +205,7 @@ The page consists of four pages and eleven features.
 10. Contact Info
 <img src="assets/docs/features/contact-info.png">
 
-- Provides the user with a phone number and email. 
+- Provides the user with a contact email and phone number. 
 - User stories covered: 9, 15
 
 11. Footer 
@@ -300,23 +297,23 @@ The website was tested on the following browsers:
 - Microsoft Edge 
 
 #### Testing user stories
-1. As a first time user, I want to know what the quiz is about.
+1.  I want to know what the quiz is about.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Navbar | Navigate to the About Us page | Welcomed with 'What is Fact Quest?' question with text below| Works as expected |
-
-2.  As a first time user, I want to play the game easily.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Button | On the hope page there is a 'CLICK HERE TO START QUIZ!' button | Click the button to start the quiz| Works as expected |
-
-3.   I want a simple way to start playing without signing up.
+ 
+2. I want to play the game easily.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Button | On the hope page there is a 'CLICK HERE TO START QUIZ!' button | Click the button to start the quiz| Works as expected |
+| Button | On the home page there is a 'CLICK HERE TO START QUIZ!' button | Starts the quiz| Works as expected |
+
+3.  I want a simple way to start playing without signing up.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Button | On the home page there is a 'CLICK HERE TO START QUIZ!' button | Starts the quiz| Works as expected |
 
 4. I want to visit the 'About Us' page to learn more. 
 
@@ -346,19 +343,19 @@ The website was tested on the following browsers:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Restart button | Finish the quiz | 'Restart' button appears below | Works as expected |
+| Score page | Finish the quiz | 'Restart' button appears below | Works as expected |
 
 9. I want to contact support if something goes wrong. 
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Navbar | Navigate to the Contact Us page| A form that can be filled out to send enquiries and contact email and number below the form| Works as expected | 
+| Contact form | Navigate to the Contact Us page| A form that can be filled out to send enquiries and contact email and number below the form| Works as expected | 
 
 10. I want to play the quiz again even if it's the same questions. 
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Restart button | select the 'Restart' button at the end of the quiz| Quiz restarts from question 1 with all scores and selections reset| Works as expected |
+| Restart button | Select the 'Restart' button at the end of the quiz| Quiz restarts from question 1 with all scores and selections reset| Works as expected |
 
 11. I want to improve my score and see if I remember the answers.  
 
@@ -404,10 +401,9 @@ The website was tested on the following browsers:
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| The menu not opening on smaller screen sizes (320px, 576px and 768px) | Copied the JS scripted tag from Bootstrap  |
-| Image on quiz game was not loading | Added 'image'wrapper' div to html with the image src inside and on JS added 'const wrapEl = document.getElementById("image-wrapper");; to the loadQuestion fuction
+| The menu not opening on smaller screen sizes (320px, 576px and 768px) | Copied the JS scripted tag from Bootstrap and attached it to all pages.  |
+| Image on quiz game was not loading | Added 'image-wrapper' div id to html with the image src inside and on JS added 'const wrapEl = document.getElementById("image-wrapper");; to the loadQuestion fuction.
 | Home page content was not centering to the middle of the page | The custom CSS code I had for the home page styling was conflicting with Bootstraps styles. So I had to remove it and replaced it with Bootstrap utility classes instead.
-
 
 
 ### Deployment
@@ -461,9 +457,9 @@ In order of appearance:
  - Question 9 image by: Jack Ansety Ht [Unsplash](https://unsplash.com/photos/lake-between-trees-and-mountains-HtUBBdNDxpQ)
 - Question 10 image by: Vimal S [Unsplash](https://unsplash.com/photos/shape-KMOSPP_iYV8)
 
-3. Quiz game, game over image: [Freepik](https://www.freepik.com/free-photo/stressed-young-student-girl-wearing-bandana-backpack-showing-alarm-clock-making-stop-gesture-screaming-with-closed-eyes-isolated-blue-background_27467065.htm#fromView=search&page=1&position=46&uuid=3af0632b-ad45-478d-bd4b-314dfe6eca04&query=times+up)
+3. Quiz game - game over image: [Freepik](https://www.freepik.com/free-photo/stressed-young-student-girl-wearing-bandana-backpack-showing-alarm-clock-making-stop-gesture-screaming-with-closed-eyes-isolated-blue-background_27467065.htm#fromView=search&page=1&position=46&uuid=3af0632b-ad45-478d-bd4b-314dfe6eca04&query=times+up)
 
-4. Quiz game, score image (cropped and split into two): by juicy_fish [Freepik](https://www.freepik.com/free-vector/circle-thumbs-up-set_81409606.htm#fromView=image_search&page=1&position=4&uuid=c4190681-be96-4e3d-b359-3921a40c8693)
+4. Quiz game - score image (cropped and split into two): by juicy_fish [Freepik](https://www.freepik.com/free-vector/circle-thumbs-up-set_81409606.htm#fromView=image_search&page=1&position=4&uuid=c4190681-be96-4e3d-b359-3921a40c8693)
 
 3. 404 image: [Freepik](https://www.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_8030430.htm#fromView=image_search&page=1&position=1&uuid=1854bd59-2290-44aa-9e76-9765b4e7ee60&query=404+error)
 
