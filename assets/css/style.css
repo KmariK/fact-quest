@@ -140,14 +140,13 @@
    }
 
    .quiz-complete {
-    color:black;
-    font-size: 500%;
+    font-size: 200%;
     font-weight: bold;
     text-align: center;
    }
 
    .quiz-complete-answer {
-    font-size: 250%;
+    font-size: 100%;
     font-weight: bold;
     text-align: center;
    }

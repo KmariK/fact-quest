@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Final quiz message
     if (qEl) {
-      qEl.textContent = "";
+      qEl.textContent = "QUIZ COMPLETE";
       qEl.classList.add("quiz-complete");
     }
   
