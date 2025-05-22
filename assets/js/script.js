@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // 10 quix game questions 
   const questions = [
     {
       answer: 1,
@@ -82,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let currentQuestion = 0;
   let score = 0;
-  let timeLeft = 300; // Updated from 10 to 300 seconds (5 minutes)
+  let timeLeft = 300; // 5 minutes countdown
   let timerInterval;
 
   function loadQuestion() {
@@ -96,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
     
-
     qEl.textContent = questions[currentQuestion].question;
     optsEl.innerHTML = "";
     answerEl.textContent = "";
@@ -179,8 +179,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (restartBtn) restartBtn.style.display = "inline-block";
     if (imgEl) imgEl.style.display = "none";
   }
-  
-  
 
   function startTimer() {
     const timerDisplay = document.getElementById("timer");

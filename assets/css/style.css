@@ -87,7 +87,7 @@
   }
 
    /*Quiz game page*/
-
+   /*Style from Chatgbt*/
    #timer {
     color: #ffffff;
     background-color: #000000;
@@ -114,12 +114,13 @@
     margin: 20px 0;
    }
    
+   /*Style from Chatgbt*/
    #game-image {
     border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  max-width: 100%;
-  width: 25%;
-   }
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    width: 25%;
+    }
 
    .options {
     padding-top: 25px;
@@ -168,6 +169,7 @@
         min-height: 80vh;
     }
     
+    /*Style from Chatgbt*/
     #contact-us-form {
             background-color: #fff;
             color: #333;
@@ -190,10 +192,10 @@
     .contact-info {
         padding-top: 20px;
         display: flex;
-        gap: 20px; /* space between the inputs */
-        flex-wrap: wrap; /* allows stacking on smaller screens */
-        justify-content: center;   /* centers horizontally */
-        align-items: center;       /* centers vertically (optional) */
+        gap: 20px; 
+        flex-wrap: wrap;
+        justify-content: center;  
+        align-items: center;    
         text-align: center; 
     }
 
@@ -347,10 +349,10 @@
     .contact-info {
         padding-top: 20px;
         display: flex;
-        gap: 20px; /* space between the inputs */
-        flex-wrap: wrap; /* allows stacking on smaller screens */
-        justify-content: center;   /* centers horizontally */
-        align-items: center;       /* centers vertically (optional) */
+        gap: 20px; 
+        flex-wrap: wrap; 
+        justify-content: center;   
+        align-items: center;       
         text-align: center; 
     }
     }
@@ -363,10 +365,10 @@
         
         /*About us page*/
         .about-us-section p {
-        max-width: 500px;      /* Limits line length for better readability */
-        line-height: 1.2;      /* Adds space between lines */
-        margin: 20px auto;     /* Adds spacing around and centers paragraph */
-        font-size: 95%;       /* Adjust to suit your design */    
+        max-width: 500px;      
+        line-height: 1.2;      
+        margin: 20px auto;     
+        font-size: 95%;       
         word-wrap: break-word;
        }
      
@@ -413,10 +415,10 @@
     .contact-info {
         padding-top: 20px;
         display: flex;
-        gap: 20px; /* space between the inputs */
-        flex-wrap: wrap; /* allows stacking on smaller screens */
-        justify-content: center;   /* centers horizontally */
-        align-items: center;       /* centers vertically (optional) */
+        gap: 20px; 
+        flex-wrap: wrap; 
+        justify-content: center;  
+        align-items: center;       
         text-align: center; 
     }
         }

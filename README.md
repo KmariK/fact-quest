@@ -2,6 +2,8 @@
 
 (Developer: Mariama Kamara)
 
+<img src="assets/images/website-home-page.png">
+
 [Live webpage](https://kmarik.github.io/fact-quest/index.html)
 
 ## Table of Contents
@@ -140,7 +142,7 @@ The page is structured in a easy, user friendly way. When the user arrive on the
 - Unsplash
 - Freepik
 - Favicon.io
-- Emailjs
+- Email API 
 
 ### Features
 The page consists of four pages and eleven features. 
