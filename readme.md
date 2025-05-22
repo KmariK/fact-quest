@@ -140,7 +140,7 @@ The page is structured in a easy, user friendly way. When the user arrive on the
 - Unsplash
 - Freepik
 - Favicon.io
-- Jquery?
+- Emailjs
 
 ### Features
 The page consists of four pages and eleven features. 
@@ -404,6 +404,8 @@ The website was tested on the following browsers:
 | ----------- | ----------- |
 | The menu not opening on smaller screen sizes (320px, 576px and 768px) | Copied the JS scripted tag from Bootstrap  |
 | Image on quiz game was not loading | Added 'image'wrapper' div to html with the image src inside and on JS added 'const wrapEl = document.getElementById("image-wrapper");; to the loadQuestion fuction
+| Home page content was not centering in the middle of the page | The custom CSS code I had for the home page styling was conflicting with Bootstraps styles. So I had to remove it and replaced it with Bootstrap utility classes instead.
+
 
 
 ### Deployment

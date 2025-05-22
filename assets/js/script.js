@@ -234,14 +234,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-//For sending out auto reply when contact form is submitted
+// Sends form data via EmailJS and triggers an automatic reply to the user after form submission
 function sendMail() {
   let parms = {
     name: document.getElementById("name").value, 
     name: document.getElementById("email").value, 
     name: document.getElementById("message").value, 
   } 
- 
   emailjs.send("service_fx2jpja","template_a85tgbd",parms).then(alert("Email Sent!"))
 }
 
