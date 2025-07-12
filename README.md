@@ -404,6 +404,7 @@ The website was tested on the following browsers:
 | The menu not opening on smaller screen sizes (320px, 576px and 768px) | Copied the JS scripted tag from Bootstrap and attached it to all pages.  |
 | Image on quiz game was not loading | Added 'image-wrapper' div id to html with the image src inside and on JS added 'const wrapEl = document.getElementById("image-wrapper");; to the loadQuestion fuction.
 | Home page content was not centering to the middle of the page | The custom CSS code I had for the home page styling was conflicting with Bootstraps styles. So I had to remove it and replaced it with Bootstrap utility classes instead.
+| 404 page footer was not staying at the bottom of the screen| I had a missing <div> for .content-wraper .
 
 
 ### Deployment
