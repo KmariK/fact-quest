@@ -4,12 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const restartBtn = document.getElementById("restart-btn");
 
   if (startBtn) {
-    startBtn.addEventListener("click", function() {
+    startBtn.addEventListener("click", function () {
       window.location.href = "quiz-page.html";
     });
   }
 
-  // 10 quix game questions 
   const questions = [
     {
       answer: 1,
@@ -26,10 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       answer: 0,
       image: "assets/images/stage-play.jpg",
-      options: ["William Shakespeare", 
-        "F.Scott Fitzgearld",
-        "J.K Rowling",
-        "Maya Angelou"],
+      options: ["William Shakespeare", "F.Scott Fitzgearld", "J.K Rowling", "Maya Angelou"],
       question: "Who wrote Romeo and Juliet?"
     },
     {
@@ -83,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let currentQuestion = 0;
   let score = 0;
-  let timeLeft = 300; // 5 minutes countdown
+  let timeLeft = 300;
   let timerInterval;
 
   function loadQuestion() {
@@ -93,18 +89,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const wrapEl = document.getElementById("image-wrapper");
     const answerEl = document.getElementById("answer");
 
-    if (!qEl || !optsEl || !imgEl || !wrapEl || !answerEl) {
-      return;
-    }
-    
+    if (!qEl || !optsEl || !imgEl || !wrapEl || !answerEl) return;
+
     qEl.textContent = questions[currentQuestion].question;
     optsEl.innerHTML = "";
+    optsEl.classList.remove("answered");
     answerEl.textContent = "";
 
     imgEl.src = questions[currentQuestion].image;
     imgEl.removeAttribute("style");
     imgEl.className = "img-fluid";
-
     wrapEl.className = "d-flex justify-content-center mb-4";
 
     questions[currentQuestion].options.forEach((opt, idx) => {
@@ -120,9 +114,28 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function checkAnswer(selected) {
-    if (selected === questions[currentQuestion].answer) {
+    const optsEl = document.getElementById("options");
+    if (optsEl.classList.contains("answered")) return;
+
+    const correctIndex = questions[currentQuestion].answer;
+    const buttons = optsEl.querySelectorAll("button");
+
+    buttons.forEach((btn, idx) => {
+      btn.disabled = true;
+      btn.classList.remove("btn-outline-primary");
+
+      if (idx === correctIndex) {
+        btn.classList.add("btn-success");
+      } else if (idx === selected) {
+        btn.classList.add("btn-danger");
+      }
+    });
+
+    if (selected === correctIndex) {
       score++;
     }
+
+    optsEl.classList.add("answered");
     if (nextBtn) nextBtn.disabled = false;
   }
 
@@ -142,24 +155,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const answerEl = document.getElementById("answer");
     const imgEl = document.getElementById("game-image");
     const timerEl = document.getElementById("timer");
-  
-    // Stop and hide timer
+
     if (timerEl) {
       timerEl.style.display = "none";
       clearInterval(timerInterval);
     }
-  
-    // Final quiz message
+
     if (qEl) {
       qEl.textContent = "QUIZ COMPLETE";
       qEl.classList.add("quiz-complete");
     }
-  
+
     if (optsEl) optsEl.innerHTML = "";
-  
+
     if (answerEl) {
       answerEl.classList.add("quiz-complete-answer");
-  
+
       if (score >= 7) {
         answerEl.style.color = "green";
         answerEl.innerHTML = `
@@ -174,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
       }
     }
-  
+
     if (nextBtn) nextBtn.style.display = "none";
     if (restartBtn) restartBtn.style.display = "inline-block";
     if (imgEl) imgEl.style.display = "none";
@@ -220,11 +231,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (restartBtn) restartBtn.style.display = "inline-block";
   }
 
-  // Attach event listeners if elements exist
   if (nextBtn) nextBtn.addEventListener("click", nextQuestion);
   if (restartBtn) restartBtn.addEventListener("click", () => location.reload());
 
-  // Initialize quiz if quiz page elements are present
   if (document.getElementById("question")) {
     loadQuestion();
     if (restartBtn) restartBtn.style.display = "none";
@@ -232,15 +241,18 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Sends form data via EmailJS and triggers an automatic reply to the user after form submission
+// ✅ FIXED: sendMail parameters correctly mapped
 function sendMail() {
   let parms = {
-    name: document.getElementById("name").value, 
-    name: document.getElementById("email").value, 
-    name: document.getElementById("message").value, 
-  } 
-  emailjs.send("service_fx2jpja","template_a85tgbd",parms).then(alert("Email Sent!"))
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+  emailjs.send("service_fx2jpja", "template_a85tgbd", parms)
+    .then(() => alert("Email Sent!"))
+    .catch(error => console.error("EmailJS error:", error));
 }
+
 
 
 
