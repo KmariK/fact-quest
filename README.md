@@ -216,6 +216,12 @@ The page consists of four pages and eleven features.
  - User stories covered: 16 
 
 ### Testing
+
+#### Manual Testing v Automated Testing 
+- For manual testing I went through my website the same way a normal user would. I checked that all the links worked, the buttons responded properly, and the forms accepted valid input but rejected incorrect ones. I also opened the site on both desktop and mobile screens to make sure the layout stayed responsive and didn’t break when resized.
+-For automated testing I used Lighthouse in Chrome DevTools. This gave me an automated report on performance, accessibility, SEO, and best practices. It helped me spot a couple of areas where I could improve my site, like image optimization and making sure contrast ratios were good for readability.
+-Overall, I combined manual testing (to check user interactions and responsiveness by hand) with a bit of automated testing (using Lighthouse to get objective performance and accessibility scores). This way I was able to confirm that the site works correctly for users and also meets modern web standards.
+
 #### HTML Validation
 - The W3S Markup Validation Service was used to validate the HTML of the website showing the validation before and after once it has been fixed.
 

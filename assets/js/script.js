@@ -3,12 +3,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const nextBtn = document.getElementById("quiz-game-next");
   const restartBtn = document.getElementById("restart-btn");
 
+  // Start quiz: Redirect to quiz page
   if (startBtn) {
     startBtn.addEventListener("click", function () {
       window.location.href = "quiz-page.html";
     });
   }
 
+  // List of quiz questions, options, correct answer index, and image
   const questions = [
     {
       answer: 1,
@@ -77,11 +79,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   ];
 
+  // Quiz state variables
   let currentQuestion = 0;
   let score = 0;
-  let timeLeft = 300;
+  let timeLeft = 300; // in seconds (5 minutes)
   let timerInterval;
 
+  
   function loadQuestion() {
     const qEl = document.getElementById("question");
     const optsEl = document.getElementById("options");
@@ -97,25 +101,30 @@ document.addEventListener("DOMContentLoaded", function () {
     answerEl.textContent = "";
 
     imgEl.src = questions[currentQuestion].image;
-    imgEl.removeAttribute("style");
     imgEl.className = "img-fluid";
     wrapEl.className = "d-flex justify-content-center mb-4";
 
+    // Dynamically create answer buttons
     questions[currentQuestion].options.forEach((opt, idx) => {
       const btn = document.createElement("button");
       btn.textContent = opt;
       btn.type = "button";
       btn.className = "btn btn-outline-primary m-1 m-sm-3 m-md-4 w-100";
-      btn.onclick = () => checkAnswer(idx);
+      btn.onclick = () => checkAnswer(idx); // Attach click handler
       optsEl.appendChild(btn);
     });
 
+    // Disable 'Next' until an answer is selected
     if (nextBtn) nextBtn.disabled = true;
   }
 
+  /**
+   * Evaluates the selected answer and provides visual feedback.
+   * Prevents further clicks and highlights the correct answer.
+   */
   function checkAnswer(selected) {
     const optsEl = document.getElementById("options");
-    if (optsEl.classList.contains("answered")) return;
+    if (optsEl.classList.contains("answered")) return; // Prevent double-click scoring
 
     const correctIndex = questions[currentQuestion].answer;
     const buttons = optsEl.querySelectorAll("button");
@@ -124,13 +133,15 @@ document.addEventListener("DOMContentLoaded", function () {
       btn.disabled = true;
       btn.classList.remove("btn-outline-primary");
 
+      // Visual feedback for correct/incorrect options
       if (idx === correctIndex) {
-        btn.classList.add("btn-success");
+        btn.classList.add("btn-success"); // correct
       } else if (idx === selected) {
-        btn.classList.add("btn-danger");
+        btn.classList.add("btn-danger"); // incorrect
       }
     });
 
+    // Update score if correct
     if (selected === correctIndex) {
       score++;
     }
@@ -139,6 +150,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (nextBtn) nextBtn.disabled = false;
   }
 
+  /**
+   * Loads the next question or ends the quiz if finished.
+   */
   function nextQuestion() {
     currentQuestion++;
     if (currentQuestion < questions.length) {
@@ -149,6 +163,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  /**
+   * Displays final score and feedback message.
+   */
   function finishQuiz() {
     const qEl = document.getElementById("question");
     const optsEl = document.getElementById("options");
@@ -168,6 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (optsEl) optsEl.innerHTML = "";
 
+    // Final message based on score
     if (answerEl) {
       answerEl.classList.add("quiz-complete-answer");
 
@@ -191,6 +209,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (imgEl) imgEl.style.display = "none";
   }
 
+  /**
+   * Starts the countdown timer and updates the display.
+   * Ends the quiz automatically when time runs out.
+   */
   function startTimer() {
     const timerDisplay = document.getElementById("timer");
     if (!timerDisplay) return;
@@ -198,6 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
     timerInterval = setInterval(() => {
       const mins = Math.floor(timeLeft / 60);
       const secs = timeLeft % 60;
+
       timerDisplay.textContent =
         (mins < 10 ? "0" : "") + mins + ":" + (secs < 10 ? "0" : "") + secs;
 
@@ -209,6 +232,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 1000);
   }
 
+  /**
+   * Displays a Game Over screen if time runs out.
+   */
   function endQuizEarly() {
     ["question", "options", "answer", "game-image", "quiz-game-next"].forEach(id => {
       const el = document.getElementById(id);
@@ -231,9 +257,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (restartBtn) restartBtn.style.display = "inline-block";
   }
 
+  // Attach click events
   if (nextBtn) nextBtn.addEventListener("click", nextQuestion);
   if (restartBtn) restartBtn.addEventListener("click", () => location.reload());
 
+  // Initialize quiz only if quiz page is loaded
   if (document.getElementById("question")) {
     loadQuestion();
     if (restartBtn) restartBtn.style.display = "none";
@@ -241,17 +269,21 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// ✅ FIXED: sendMail parameters correctly mapped
+/**
+ * Sends contact form data using EmailJS
+ */
 function sendMail() {
   let parms = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
     message: document.getElementById("message").value,
   };
+
   emailjs.send("service_fx2jpja", "template_a85tgbd", parms)
     .then(() => alert("Email Sent!"))
     .catch(error => console.error("EmailJS error:", error));
 }
+
 
 
 
